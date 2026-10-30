@@ -1,102 +1,55 @@
-import { Users, Code, Cpu, Award, Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./social-icons";
-
 export function Founders() {
   const founders = [
     {
-      name: "Elio Romero",
-      role: "Cofundador de Datelar",
-      specialty: "Gestión Tecnológica & Estrategia de Operaciones",
-      bio: "Impulsa la visión comercial y operativa de Datelar, liderando la adopción de Sentinel Drive y las soluciones de telemetría y control de accesos para empresas e industrias.",
-      focus: ["Telemetría Vehicular", "Gestión de Flotas", "Estrategia Tecnológica", "Operaciones B2B"],
-      avatarInitials: "ER",
-      accent: "cyan",
+      name: "ELIO ROMERO",
+      role: "COFUNDADOR // ESTRATEGIA & OPERACIONES",
+      bio: "Dirección operativa y expansión de Datelar. Lidera la implementación de Sentinel Drive en flotas corporativas y la infraestructura de control de accesos a gran escala.",
+      discipline: "GESTIÓN TECNOLÓGICA & OPERACIONES B2B",
     },
     {
-      name: "Gerardo Gonza",
-      role: "Cofundador de Datelar & Creador de Datelar Labs",
-      specialty: "Ingeniería de Software, Telecomunicaciones & IoT",
-      bio: "Conocido en el ecosistema técnico como Theter. Diseña la arquitectura de sistemas embebidos, plataformas cloud y dirige de forma independiente los proyectos abiertos de Datelar Labs como Music Muv.",
-      focus: ["Sistemas Embebidos / IoT", "Arquitectura Cloud", "Redes & Telecomunicaciones", "Open Source (Music Muv)"],
-      avatarInitials: "GG",
-      accent: "amber",
+      name: "GERARDO GONZA",
+      role: "COFUNDADOR // ARQUITECTURA & LABS",
+      bio: "Conocido en el entorno técnico como Theter. Diseña la arquitectura de sistemas embebidos, protocolos de telemetría y dirige de forma independiente los proyectos de Datelar Labs como Music Muv.",
+      discipline: "INGENIERÍA DE SOFTWARE, TELECOM & IOT",
     },
   ];
 
   return (
-    <section id="fundadores" className="scroll-mt-28 border-t border-white/10 py-16 lg:py-24">
-      <div className="space-y-12">
-        {/* Section Header */}
-        <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-datelar-cyan">
-            Liderazgo Técnico & Visión
-          </p>
-          <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Equipo Fundador
+    <section id="equipo" className="w-full px-6 md:px-12 py-24 starlink-border-t">
+      <div className="space-y-16">
+        <div>
+          <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+            06 &middot; Liderazgo Técnico
+          </span>
+          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl mt-3">
+            EQUIPO FUNDADOR
           </h2>
-          <p className="max-w-2xl text-base text-slate-300">
-            La sinergia entre hardware robusto, ingeniería de telecomunicaciones y desarrollo 
-            de software moderno que da vida a Datelar.
-          </p>
         </div>
 
-        {/* Founders Cards */}
         <div className="grid gap-8 md:grid-cols-2">
-          {founders.map((f) => {
-            const isCyan = f.accent === "cyan";
-            return (
-              <div
-                key={f.name}
-                className={`relative overflow-hidden rounded-3xl p-8 transition ${
-                  isCyan ? "glass-panel" : "glass-panel-amber"
-                }`}
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center gap-5">
-                  {/* Initials Avatar badge */}
-                  <div
-                    className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl text-xl font-extrabold border ${
-                      isCyan
-                        ? "bg-datelar-cyan/15 text-datelar-cyan border-datelar-cyan/30"
-                        : "bg-datelar-amber/15 text-datelar-amber border-datelar-amber/30"
-                    }`}
-                  >
-                    {f.avatarInitials}
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">{f.name}</h3>
-                    <p
-                      className={`text-sm font-semibold ${
-                        isCyan ? "text-datelar-cyan" : "text-datelar-amber"
-                      }`}
-                    >
-                      {f.role}
-                    </p>
-                    <p className="text-xs text-slate-400">{f.specialty}</p>
-                  </div>
-                </div>
-
-                <p className="mt-6 text-sm leading-relaxed text-slate-300">{f.bio}</p>
-
-                {/* Focus badges */}
-                <div className="mt-6 border-t border-white/10 pt-5">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2.5">
-                    Áreas de Enfoque:
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {f.focus.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-lg border border-white/10 bg-black/40 px-3 py-1 text-xs text-slate-300"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+          {founders.map((f) => (
+            <div
+              key={f.name}
+              className="border border-white/10 bg-neutral-950 p-8 sm:p-10 space-y-6"
+            >
+              <div>
+                <span className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase">
+                  {f.role}
+                </span>
+                <h3 className="text-2xl font-medium text-white tracking-wide mt-1">
+                  {f.name}
+                </h3>
               </div>
-            );
-          })}
+
+              <p className="text-sm text-neutral-400 font-light leading-relaxed">
+                {f.bio}
+              </p>
+
+              <div className="pt-4 border-t border-white/5 font-mono text-[11px] text-neutral-400">
+                ESPECIALIDAD: {f.discipline}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

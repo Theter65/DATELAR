@@ -6,7 +6,7 @@ interface BrandLogoProps {
   showText?: boolean;
 }
 
-export function BrandLogo({ className = "", size = 38, showText = true }: BrandLogoProps) {
+export function BrandLogo({ className = "", size = 28, showText = true }: BrandLogoProps) {
   return (
     <div className={`flex items-center gap-3 select-none ${className}`}>
       {/* Official Datelar Brand SVG Symbol */}
@@ -18,45 +18,38 @@ export function BrandLogo({ className = "", size = 38, showText = true }: BrandL
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="simbolo">
-          {/* Cyan circuit traces */}
+          {/* Circuit traces in solid white or brand cyan */}
           <path
-            fill="#3CC6D9"
+            fill="#FFFFFF"
             d="M19 27 L24 27 L24 33 L19 33 Z M36 27 L64 27 L64 33 L36 33 Z M76 30 L76 25.757 L82.879 18.879 L87.121 23.121 L78.121 32.121 Z M78.121 32.121 L78.051 32.19 L77.978 32.256 L77.903 32.319 L77.826 32.38 L77.747 32.439 L77.667 32.494 L77.584 32.548 L77.5 32.598 L77.414 32.646 L77.327 32.691 L77.238 32.733 L77.148 32.772 L77.057 32.808 L76.964 32.841 L76.871 32.871 L76.776 32.898 L76.681 32.922 L76.585 32.942 L76.489 32.96 L76.392 32.974 L76.294 32.986 L76.196 32.994 L76.098 32.998 L76 33 L76 30 Z M19 67 L24 67 L24 73 L19 73 Z M36 67 L64 67 L64 73 L36 73 Z M76 70 L78.121 67.879 L87.121 76.879 L82.879 81.121 L76 74.243 Z M76 70 L76 67 L76.098 67.002 L76.196 67.006 L76.294 67.014 L76.392 67.026 L76.489 67.04 L76.585 67.058 L76.681 67.078 L76.776 67.102 L76.871 67.129 L76.964 67.159 L77.057 67.192 L77.148 67.228 L77.238 67.267 L77.327 67.309 L77.414 67.354 L77.5 67.402 L77.584 67.452 L77.667 67.506 L77.747 67.561 L77.826 67.62 L77.903 67.681 L77.978 67.744 L78.051 67.81 L78.121 67.879 Z M19 47 L44 47 L44 53 L19 53 Z M56 47 L82 47 L82 53 L56 53 Z"
           />
-          {/* Off-white bus lines */}
           <path
-            fill="#F3F1EA"
+            fill="#FFFFFF"
             d="M27 19 L33 19 L33 44 L27 44 Z M27 56 L33 56 L33 81 L27 81 Z M67 19 L73 19 L73 44 L67 44 Z M67 56 L73 56 L73 81 L67 81 Z M47 19 L53 19 L53 24 L47 24 Z M47 36 L53 36 L53 64 L47 64 Z M47 76 L53 76 L53 81 L47 81 Z"
           />
-          {/* Cyan contact nodes */}
+          {/* Circuit Contact Nodes */}
           <path
-            fill="#3CC6D9"
+            fill="#FFFFFF"
             fillRule="evenodd"
             d="M20.75 30 A6.75 6.75 0 1 1 7.25 30 A6.75 6.75 0 1 1 20.75 30 Z M17.25 30 A3.25 3.25 0 1 0 10.75 30 A3.25 3.25 0 1 0 17.25 30 Z M20.75 50 A6.75 6.75 0 1 1 7.25 50 A6.75 6.75 0 1 1 20.75 50 Z M17.25 50 A3.25 3.25 0 1 0 10.75 50 A3.25 3.25 0 1 0 17.25 50 Z M20.75 70 A6.75 6.75 0 1 1 7.25 70 A6.75 6.75 0 1 1 20.75 70 Z M17.25 70 A3.25 3.25 0 1 0 10.75 70 A3.25 3.25 0 1 0 17.25 70 Z M95.75 17 A6.75 6.75 0 1 1 82.25 17 A6.75 6.75 0 1 1 95.75 17 Z M92.25 17 A3.25 3.25 0 1 0 85.75 17 A3.25 3.25 0 1 0 92.25 17 Z M95.75 83 A6.75 6.75 0 1 1 82.25 83 A6.75 6.75 0 1 1 95.75 83 Z M92.25 83 A3.25 3.25 0 1 0 85.75 83 A3.25 3.25 0 1 0 92.25 83 Z"
           />
-          {/* Off-white outer nodes */}
           <path
-            fill="#F3F1EA"
+            fill="#FFFFFF"
             fillRule="evenodd"
             d="M36.75 14 A6.75 6.75 0 1 1 23.25 14 A6.75 6.75 0 1 1 36.75 14 Z M33.25 14 A3.25 3.25 0 1 0 26.75 14 A3.25 3.25 0 1 0 33.25 14 Z M36.75 86 A6.75 6.75 0 1 1 23.25 86 A6.75 6.75 0 1 1 36.75 86 Z M33.25 86 A3.25 3.25 0 1 0 26.75 86 A3.25 3.25 0 1 0 33.25 86 Z M56.75 14 A6.75 6.75 0 1 1 43.25 14 A6.75 6.75 0 1 1 56.75 14 Z M53.25 14 A3.25 3.25 0 1 0 46.75 14 A3.25 3.25 0 1 0 53.25 14 Z M56.75 86 A6.75 6.75 0 1 1 43.25 86 A6.75 6.75 0 1 1 56.75 86 Z M53.25 86 A3.25 3.25 0 1 0 46.75 86 A3.25 3.25 0 1 0 53.25 86 Z M76.75 14 A6.75 6.75 0 1 1 63.25 14 A6.75 6.75 0 1 1 76.75 14 Z M73.25 14 A3.25 3.25 0 1 0 66.75 14 A3.25 3.25 0 1 0 73.25 14 Z M76.75 86 A6.75 6.75 0 1 1 63.25 86 A6.75 6.75 0 1 1 76.75 86 Z M73.25 86 A3.25 3.25 0 1 0 66.75 86 A3.25 3.25 0 1 0 73.25 86 Z"
           />
-          {/* Signal Amber Accent Node */}
+          {/* Signal node in Datelar cyan */}
           <path
-            fill="#E8A33D"
+            fill="#3CC6D9"
             d="M94.5 50 A6.5 6.5 0 1 1 81.5 50 A6.5 6.5 0 1 1 94.5 50 Z"
           />
         </g>
       </svg>
 
       {showText && (
-        <div className="flex flex-col">
-          <span className="text-xl font-bold tracking-wider text-white">
-            DATELAR
-          </span>
-          <span className="text-[10px] tracking-[0.25em] font-semibold text-datelar-cyan -mt-1 uppercase">
-            Tech Ecosystem
-          </span>
-        </div>
+        <span className="text-sm font-semibold tracking-[0.25em] text-white uppercase">
+          DATELAR
+        </span>
       )}
     </div>
   );

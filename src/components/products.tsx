@@ -1,311 +1,248 @@
-import { 
-  Navigation, 
-  QrCode, 
-  Cpu, 
-  Activity, 
-  MapPin, 
-  Gauge, 
-  ShieldAlert, 
-  CheckCircle2, 
-  Smartphone, 
-  Server, 
-  Radio, 
-  BatteryCharging 
-} from "lucide-react";
-
 export function Products() {
   return (
-    <section className="space-y-24 py-8 lg:py-16">
-      {/* 1. Sentinel Drive */}
-      <div id="sentinel-drive" className="scroll-mt-28">
-        <div className="glass-panel relative overflow-hidden rounded-3xl p-8 lg:p-12">
-          <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-datelar-cyan/15 blur-3xl" />
-          
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-            {/* Left Column: Info */}
-            <div className="space-y-6 lg:col-span-7">
-              <div className="inline-flex items-center gap-2 rounded-lg bg-datelar-cyan/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-datelar-cyan border border-datelar-cyan/20">
-                <Navigation className="h-4 w-4" />
-                <span>Producto Insignia &middot; Telemetría Vehicular</span>
+    <div className="w-full">
+      {/* 1. SENTINEL DRIVE */}
+      <section
+        id="sentinel-drive"
+        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+      >
+        <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="space-y-6 lg:col-span-6">
+            <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+              01 &middot; Telemetría Vehicular
+            </span>
+
+            <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
+              SENTINEL DRIVE
+            </h2>
+
+            <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
+              Plataforma de telemetría de alta sensibilidad y gestión operativa de flotas. 
+              Monitoreo continuo de ubicación satelital, análisis de patrones de conducción 
+              y diagnóstico mecánico directo mediante puerto OBD-II y red CAN.
+            </p>
+
+            {/* Technical Specs List */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 max-w-xl text-xs text-neutral-400 font-mono">
+              <div className="border border-white/10 p-3 bg-neutral-950">
+                <div className="text-white font-sans font-medium mb-1">RASTREO GPS EN VIVO</div>
+                <div>Actualización continua &lt;2s con búfer de memoria sin cobertura.</div>
               </div>
 
-              <div className="space-y-3">
-                <h3 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-                  Sentinel Drive
-                </h3>
-                <p className="text-base font-medium text-datelar-cyan">
-                  Monitoreo de flotas, control predictivo y seguridad vehicular en tiempo real.
-                </p>
-                <p className="text-base leading-relaxed text-slate-300">
-                  <strong>Sentinel Drive</strong> es la solución integral de telemetría desarrollada por Datelar. 
-                  Combina hardware rastreador de alta sensibilidad con una plataforma analítica en la nube 
-                  para brindarte visibilidad absoluta sobre cada kilómetro recorrido, comportamiento de manejo 
-                  y salud mecánica del vehículo.
-                </p>
+              <div className="border border-white/10 p-3 bg-neutral-950">
+                <div className="text-white font-sans font-medium mb-1">DIAGNÓSTICO CAN / OBD-II</div>
+                <div>Lectura de RPM, temperatura, velocidad real y códigos DTC.</div>
               </div>
 
-              {/* Feature Grid */}
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  {
-                    icon: MapPin,
-                    title: "Rastreo GPS de Precisión",
-                    desc: "Ubicación en vivo con actualización continua y almacenamiento offline de rutas.",
-                  },
-                  {
-                    icon: Gauge,
-                    title: "Diagnóstico OBD-II / CAN",
-                    desc: "Lectura de velocidad, RPM, temperatura de motor y códigos de falla.",
-                  },
-                  {
-                    icon: ShieldAlert,
-                    title: "Geocercas & Alertas",
-                    desc: "Notificaciones instantáneas por salidas de zona, excesos de velocidad o impactos.",
-                  },
-                  {
-                    icon: BatteryCharging,
-                    title: "Corte Remoto & Batería",
-                    desc: "Inmovilización remota ante emergencias y respaldo de energía autónomo.",
-                  },
-                ].map((feat) => {
-                  const Icon = feat.icon;
-                  return (
-                    <div key={feat.title} className="rounded-xl border border-white/5 bg-black/40 p-4">
-                      <div className="flex items-center gap-2 text-white">
-                        <Icon className="h-4 w-4 text-datelar-cyan" />
-                        <span className="text-sm font-bold">{feat.title}</span>
-                      </div>
-                      <p className="mt-1.5 text-xs text-slate-300 leading-relaxed">{feat.desc}</p>
-                    </div>
-                  );
-                })}
+              <div className="border border-white/10 p-3 bg-neutral-950">
+                <div className="text-white font-sans font-medium mb-1">CORTE DE MOTOR REMOTO</div>
+                <div>Inmovilización preventiva segura activada vía plataforma web/móvil.</div>
               </div>
 
-              <div className="pt-2">
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 rounded-xl bg-datelar-cyan px-6 py-3 text-sm font-bold text-[#060a12] transition hover:brightness-110"
+              <div className="border border-white/10 p-3 bg-neutral-950">
+                <div className="text-white font-sans font-medium mb-1">GEOCERCAS INTELIGENTES</div>
+                <div>Alertas instantáneas por desvío de ruta o uso no autorizado.</div>
+              </div>
+            </div>
+
+            <div className="pt-4">
+              <a
+                href="#contacto"
+                className="inline-block border border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
+              >
+                SOLICITAR DEMO DE SENTINEL DRIVE
+              </a>
+            </div>
+          </div>
+
+          {/* Right: Technical Telemetry Console (Starlink style) */}
+          <div className="lg:col-span-6">
+            <div className="border border-white/15 bg-neutral-950 p-6 sm:p-8 font-mono text-xs">
+              <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                <div className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-white" />
+                  <span className="text-white font-semibold tracking-wider">UNIT #SD-8820 // ACTIVE</span>
+                </div>
+                <span className="text-neutral-500 text-[10px] tracking-widest">4G LTE DUAL-BAND</span>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 py-6 border-b border-white/10">
+                <div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">VELOCIDAD</div>
+                  <div className="text-2xl font-normal text-white mt-1">74.2 <span className="text-xs text-neutral-400">KM/H</span></div>
+                </div>
+
+                <div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">NIVEL COMBUSTIBLE</div>
+                  <div className="text-2xl font-normal text-white mt-1">82 <span className="text-xs text-neutral-400">%</span></div>
+                </div>
+
+                <div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">TEMPERATURA MOTOR</div>
+                  <div className="text-2xl font-normal text-white mt-1">88 <span className="text-xs text-neutral-400">°C</span></div>
+                </div>
+
+                <div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">ENLACE SATELITAL</div>
+                  <div className="text-2xl font-normal text-white mt-1">16 <span className="text-xs text-neutral-400">SATS FIXED</span></div>
+                </div>
+              </div>
+
+              <div className="pt-4 text-neutral-400 text-[11px] space-y-1">
+                <div>&gt; OBD2_STATUS: NOMINAL (NO ACTIVE DTC CODES)</div>
+                <div>&gt; GEOFENCE_CHECK: WITHIN_DESIGNATED_SECTOR</div>
+                <div>&gt; LAST_PACKET_LATENCY: 140MS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. ACCESOS QR */}
+      <section
+        id="accesos-qr"
+        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+      >
+        <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
+          {/* Visual QR card */}
+          <div className="order-2 lg:order-1 lg:col-span-5">
+            <div className="border border-white/15 bg-neutral-950 p-8 flex flex-col items-center justify-center text-center">
+              <div className="border border-white/20 p-6 bg-black mb-6">
+                <svg
+                  className="w-40 h-40 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="square"
+                  strokeLinejoin="miter"
                 >
-                  <span>Solicitar Demo de Sentinel Drive</span>
-                  <Navigation className="h-4 w-4" />
-                </a>
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                  <rect x="6" y="6" width="1" height="1" fill="currentColor" />
+                  <rect x="17" y="6" width="1" height="1" fill="currentColor" />
+                  <rect x="6" y="17" width="1" height="1" fill="currentColor" />
+                  <path d="M14 14h3v3h-3zM17 17h4v4h-4zM14 20h3v1h-3z" />
+                </svg>
               </div>
-            </div>
 
-            {/* Right Column: Telemetry UI Card Mockup */}
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl border border-datelar-cyan/30 bg-[#09121f] p-6 shadow-glow">
-                {/* Mock header */}
-                <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                  <div className="flex items-center gap-2.5">
-                    <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse" />
-                    <div>
-                      <div className="text-xs font-bold text-white">Unidad Sentinel #SD-041</div>
-                      <div className="text-[10px] text-slate-300">En ruta &middot; Conectado 4G LTE</div>
-                    </div>
-                  </div>
-                  <span className="rounded bg-datelar-cyan/20 px-2 py-0.5 text-[11px] font-mono font-bold text-datelar-cyan">
-                    TELEMETRY ON
-                  </span>
+              <div className="font-mono text-xs text-neutral-400 space-y-1 w-full text-left starlink-border-t pt-4">
+                <div className="flex justify-between">
+                  <span>TOKEN_ID:</span>
+                  <span className="text-white">DTL-QR-99042</span>
                 </div>
-
-                {/* Telemetry Metrics display */}
-                <div className="mt-5 grid grid-cols-2 gap-3 font-mono">
-                  <div className="rounded-xl bg-[#060a12] p-3 border border-white/5">
-                    <div className="text-[11px] text-slate-300 uppercase">Velocidad Actual</div>
-                    <div className="mt-1 text-2xl font-bold text-white">
-                      68.4 <span className="text-xs text-datelar-cyan">km/h</span>
-                    </div>
-                    <div className="mt-1 text-[10px] text-emerald-400 font-sans">✓ Límite regular</div>
-                  </div>
-
-                  <div className="rounded-xl bg-[#060a12] p-3 border border-white/5">
-                    <div className="text-[11px] text-slate-300 uppercase">Combustible</div>
-                    <div className="mt-1 text-2xl font-bold text-datelar-amber">
-                      78 <span className="text-xs text-slate-300">%</span>
-                    </div>
-                    <div className="mt-1 text-[10px] text-slate-300 font-sans">Consumo: 8.2 L/100km</div>
-                  </div>
-
-                  <div className="rounded-xl bg-[#060a12] p-3 border border-white/5">
-                    <div className="text-[11px] text-slate-300 uppercase">Temp. Motor</div>
-                    <div className="mt-1 text-2xl font-bold text-white">
-                      89 <span className="text-xs text-datelar-cyan">°C</span>
-                    </div>
-                    <div className="mt-1 text-[10px] text-slate-300 font-sans">Óptimo normal</div>
-                  </div>
-
-                  <div className="rounded-xl bg-[#060a12] p-3 border border-white/5">
-                    <div className="text-[11px] text-slate-300 uppercase">Satélites GPS</div>
-                    <div className="mt-1 text-2xl font-bold text-white">
-                      14 <span className="text-xs text-datelar-cyan">LOCK</span>
-                    </div>
-                    <div className="mt-1 text-[10px] text-slate-300 font-sans">Precisión: &plusmn; 1.5m</div>
-                  </div>
+                <div className="flex justify-between">
+                  <span>TIEMPO_VALIDACIÓN:</span>
+                  <span className="text-white">&lt; 200 MS</span>
                 </div>
-
-                {/* Status Bar */}
-                <div className="mt-5 rounded-lg bg-black/40 p-3 text-xs text-slate-300">
-                  <div className="flex items-center justify-between text-[11px]">
-                    <span className="flex items-center gap-1.5 text-slate-200">
-                      <Activity className="h-3.5 w-3.5 text-datelar-cyan" />
-                      Protocolo CAN / OBD-II
-                    </span>
-                    <span className="text-emerald-400 font-semibold">Sin fallas mecánicas</span>
-                  </div>
+                <div className="flex justify-between">
+                  <span>ESTADO:</span>
+                  <span className="text-white">VALIDADO // ACCESO PERMITIDO</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* 2. Datelar Access (Gestión de Entradas QR) */}
-      <div id="accesos-qr" className="scroll-mt-28">
-        <div className="glass-panel relative overflow-hidden rounded-3xl p-8 lg:p-12">
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-            {/* Visual preview */}
-            <div className="order-2 lg:order-1 lg:col-span-5">
-              <div className="relative rounded-2xl border border-white/10 bg-[#09121f] p-6">
-                <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                  <span className="text-xs font-bold text-white">Acceso Digital Verificado</span>
-                  <span className="rounded-full bg-emerald-500/20 px-2.5 py-0.5 text-xs font-semibold text-emerald-400">
-                    VÁLIDO
-                  </span>
-                </div>
+          <div className="order-1 lg:order-2 space-y-6 lg:col-span-7">
+            <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+              02 &middot; Control de Acceso
+            </span>
 
-                {/* QR visual element */}
-                <div className="my-6 flex flex-col items-center justify-center rounded-xl bg-white p-6">
-                  {/* Dynamic QR symbol graphic */}
-                  <div className="h-44 w-44 rounded-lg bg-[#060a12] p-3.5 flex items-center justify-center relative">
-                    <QrCode className="h-full w-full text-datelar-cyan" />
-                  </div>
-                  <span className="mt-3 text-xs font-mono font-semibold text-slate-700">
-                    PASS-DTL-892147-SECURE
-                  </span>
-                </div>
+            <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
+              DATELAR ACCESS
+            </h2>
 
-                <div className="space-y-2 text-xs text-slate-300">
-                  <div className="flex justify-between">
-                    <span>Aforo en Tiempo Real:</span>
-                    <strong className="text-white">412 / 500 personas (82%)</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Tiempo de Validación:</span>
-                    <strong className="text-datelar-cyan">&lt; 250 ms por entrada</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Seguridad:</span>
-                    <strong className="text-emerald-400">QR Criptográfico Anti-Copia</strong>
-                  </div>
-                </div>
+            <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
+              Gestión inteligente de boletería digital y control de aforo masivo mediante 
+              códigos QR dinámicos. Diseñado para recintos, eventos y accesos corporativos que requieren 
+              máxima velocidad y cero fraude.
+            </p>
+
+            <div className="space-y-3 text-xs text-neutral-400 font-mono max-w-xl">
+              <div className="border-l-2 border-white pl-3 py-1">
+                <strong className="text-white font-sans block">Algoritmo Anti-Duplicación:</strong>
+                Códigos dinámicos que impiden la reventa fraudulenta o captura de pantalla.
+              </div>
+
+              <div className="border-l-2 border-white pl-3 py-1">
+                <strong className="text-white font-sans block">Modo Offline Resiliente:</strong>
+                Validación continua sin interrupción en recintos o festivales sin señal móvil.
+              </div>
+
+              <div className="border-l-2 border-white pl-3 py-1">
+                <strong className="text-white font-sans block">Aforo & Auditoría en Vivo:</strong>
+                Monitoreo exacto de ingresos, salidas y porcentajes de ocupación por zona.
               </div>
             </div>
 
-            {/* Text description */}
-            <div className="order-1 space-y-6 lg:order-2 lg:col-span-7">
-              <div className="inline-flex items-center gap-2 rounded-lg bg-emerald-500/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 border border-emerald-500/20">
-                <QrCode className="h-4 w-4" />
-                <span>Control & Ticketing Inteligente</span>
-              </div>
-
-              <div className="space-y-3">
-                <h3 className="text-3xl font-extrabold text-white sm:text-4xl">
-                  Datelar Access &middot; Gestión de Entradas QR
-                </h3>
-                <p className="text-base leading-relaxed text-slate-300">
-                  Digitaliza y asegura el acceso a eventos masivos, recintos, discotecas, conferencias 
-                  o empresas. Nuestro sistema genera códigos QR dinámicos e infalsificables que garantizan 
-                  el ingreso rápido, eliminan la reventa fraudulenta y ofrecen analíticas de asistencia en vivo.
-                </p>
-              </div>
-
-              <div className="space-y-3">
-                {[
-                  "Validación ultrarrápida mediante smartphones o lectores ópticos de hardware dedicados.",
-                  "Modo Offline Seguro: Opera sin interrupciones incluso en zonas con baja o nula cobertura celular.",
-                  "Panel administrativo con monitoreo de aforo en vivo, horas pico de ingreso y reportes inmediatos.",
-                  "Generación masiva y envío automático de accesos mediante WhatsApp y correo electrónico.",
-                ].map((point, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-datelar-cyan shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-200">{point}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-2">
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  <span>Cotizar Sistema de Accesos QR</span>
-                  <QrCode className="h-4 w-4 text-emerald-400" />
-                </a>
-              </div>
+            <div className="pt-4">
+              <a
+                href="#contacto"
+                className="inline-block border border-white/40 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
+              >
+                COTIZAR CONTROL DE ACCESOS
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* 3. Hardware & IoT Solutions */}
-      <div id="hardware-iot" className="scroll-mt-28">
-        <div className="glass-panel relative overflow-hidden rounded-3xl p-8 lg:p-12">
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-lg bg-datelar-amber/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-datelar-amber border border-datelar-amber/20">
-              <Cpu className="h-4 w-4" />
-              <span>Ingeniería Electrónica & Telecomunicaciones</span>
-            </div>
+      {/* 3. HARDWARE & IOT */}
+      <section
+        id="hardware-iot"
+        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+      >
+        <div className="max-w-4xl space-y-6">
+          <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+            03 &middot; Ingeniería Embebida
+          </span>
 
-            <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-              <div className="space-y-4">
-                <h3 className="text-3xl font-extrabold text-white sm:text-4xl">
-                  Soluciones Tecnológicas de Hardware e IoT
-                </h3>
-                <p className="text-base leading-relaxed text-slate-300">
-                  En Datelar no dependemos de módulos prefabricados de terceros. Diseñamos 
-                  desde cero circuitos impresos (PCB), seleccionamos microcontroladores industriales 
-                  y desarrollamos firmware embebido adaptado a los requerimientos de tu operación.
-                </p>
-              </div>
+          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
+            HARDWARE & IOT A MEDIDA
+          </h2>
 
-              <div className="grid gap-3 sm:grid-cols-2">
-                <div className="rounded-xl border border-white/10 bg-black/40 p-4">
-                  <Radio className="h-5 w-5 text-datelar-amber" />
-                  <h4 className="mt-2 text-sm font-bold text-white">Conectividad Avanzada</h4>
-                  <p className="mt-1 text-xs text-slate-300">
-                    Redes 4G LTE, NB-IoT, LoRaWAN y RF diseñadas para cobertura de largo alcance.
-                  </p>
-                </div>
+          <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-2xl">
+            Desarrollo integral de electrónica desde la concepción del esquemático hasta 
+            la fabricación de PCB, ensamblaje y programación de firmware industrial de ultra bajo consumo.
+          </p>
+        </div>
 
-                <div className="rounded-xl border border-white/10 bg-black/40 p-4">
-                  <Server className="h-5 w-5 text-datelar-amber" />
-                  <h4 className="mt-2 text-sm font-bold text-white">Nodos Sensores a Medida</h4>
-                  <p className="mt-1 text-xs text-slate-300">
-                    Medición de variables físicas, telemetría ambiental y automatización industrial.
-                  </p>
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
+          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
+            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">01 // CONECTIVIDAD</div>
+            <h3 className="text-lg font-medium text-white">4G LTE, NB-IoT & LoRaWAN</h3>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Módulos de comunicación de largo alcance optimizados para ambientes remotos e industriales.
+            </p>
+          </div>
 
-                <div className="rounded-xl border border-white/10 bg-black/40 p-4">
-                  <Cpu className="h-5 w-5 text-datelar-amber" />
-                  <h4 className="mt-2 text-sm font-bold text-white">Firmware Optimizado</h4>
-                  <p className="mt-1 text-xs text-slate-300">
-                    Algoritmos de ultrabajo consumo energético para operación ininterrumpida con batería.
-                  </p>
-                </div>
+          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
+            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">02 // SENSORES</div>
+            <h3 className="text-lg font-medium text-white">Nodos de Monitoreo Industrial</h3>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Captura precisa de variables mecánicas, térmicas y eléctricas con almacenamiento local.
+            </p>
+          </div>
 
-                <div className="rounded-xl border border-white/10 bg-black/40 p-4">
-                  <Smartphone className="h-5 w-5 text-datelar-amber" />
-                  <h4 className="mt-2 text-sm font-bold text-white">Integración Cloud</h4>
-                  <p className="mt-1 text-xs text-slate-300">
-                    APIs REST, MQTT y sockets para conectar cualquier dispositivo a dashboards web y móviles.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
+            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">03 // FIRMWARE</div>
+            <h3 className="text-lg font-medium text-white">Arquitectura Embebida Segura</h3>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Código en C/C++ optimizado para eficiencia energética extrema y actualización remota OTA.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div className="pt-8">
+          <a
+            href="#contacto"
+            className="inline-block border border-white/40 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
+          >
+            CONSULTAR PROYECTO DE HARDWARE
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }

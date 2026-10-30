@@ -4,13 +4,8 @@
 
 :root {
   color-scheme: dark;
-  --background: #060a12;
-  --foreground: #f3f1ea;
-  --muted: #8b9bb4;
-  --panel: rgba(15, 27, 45, 0.65);
-  --panel-border: rgba(60, 198, 217, 0.16);
-  --cyan: #3cc6d9;
-  --amber: #e8a33d;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 * {
@@ -19,15 +14,18 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #000000;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -36,71 +34,45 @@ a {
 }
 
 ::selection {
-  background: #3cc6d9;
-  color: #060a12;
+  background: #ffffff;
+  color: #000000;
 }
 
-.text-gradient-cyan {
-  background: linear-gradient(135deg, #ffffff 30%, #3cc6d9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Starlink-inspired minimalist containers & subtle hairlines */
+.starlink-border {
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.text-gradient-amber {
-  background: linear-gradient(135deg, #ffffff 40%, #e8a33d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.starlink-border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.glass-panel {
-  background: rgba(15, 27, 45, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(60, 198, 217, 0.15);
-  transition: all 0.3s ease;
+.starlink-border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.glass-panel:hover {
-  border-color: rgba(60, 198, 217, 0.35);
-  box-shadow: 0 12px 30px -10px rgba(60, 198, 217, 0.15);
-}
-
-.glass-panel-amber {
-  background: rgba(22, 25, 35, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(232, 163, 61, 0.2);
-  transition: all 0.3s ease;
-}
-
-.glass-panel-amber:hover {
-  border-color: rgba(232, 163, 61, 0.4);
-  box-shadow: 0 12px 30px -10px rgba(232, 163, 61, 0.15);
-}
-
-.tech-grid-bg {
+/* Subtle tech grid for engineering precision (Starlink/SpaceX telemetry look) */
+.subtle-grid {
   background-image: 
-    linear-gradient(to right, rgba(60, 198, 217, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(60, 198, 217, 0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
 }
 
-/* Custom sleek dark scrollbar */
+/* Minimalist dark scrollbar */
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #060a12;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #172437;
-  border-radius: 9999px;
-  border: 1px solid rgba(60, 198, 217, 0.1);
+  background: #262626;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3cc6d9;
+  background: #404040;
 }
