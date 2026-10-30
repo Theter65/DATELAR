@@ -2,15 +2,15 @@ export function Founders() {
   const founders = [
     {
       name: "ELIO ROMERO",
-      role: "COFUNDADOR // ESTRATEGIA & OPERACIONES",
-      bio: "Dirección operativa y expansión de Datelar. Lidera la implementación de Sentinel Drive en flotas corporativas y la infraestructura de control de accesos a gran escala.",
-      discipline: "GESTIÓN TECNOLÓGICA & OPERACIONES B2B",
+      role: "COFUNDADOR // ESTRATEGIA, IOT & DESARROLLO DE HARDWARE",
+      bio: "Especializado en el desarrollo de hardware embebido, diseño electrónico, integración de sensores IoT y despliegue de infraestructura tecnológica de campo para Datelar.",
+      discipline: "INGENIERÍA DE HARDWARE, IOT & ESTRATEGIA OPERATIVA",
     },
     {
       name: "GERARDO GONZA",
-      role: "COFUNDADOR // ARQUITECTURA & LABS",
-      bio: "Conocido en el entorno técnico como Theter. Diseña la arquitectura de sistemas embebidos, protocolos de telemetría y dirige de forma independiente los proyectos de Datelar Labs como Music Muv.",
-      discipline: "INGENIERÍA DE SOFTWARE, TELECOM & IOT",
+      role: "COFUNDADOR // SOFTWARE, TELECOM & DATELAR LABS",
+      bio: "Conocido en el entorno técnico como Theter. Diseña la arquitectura de software, plataformas cloud, protocolos de telecomunicaciones y dirige la división Datelar Labs.",
+      discipline: "INGENIERÍA DE SOFTWARE, REDES & DATELAR LABS",
     },
   ];
 

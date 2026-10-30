@@ -81,23 +81,14 @@ export function DatelarLabs() {
         ))}
       </div>
 
-      {/* Direct, clean attribution box as requested by Gerardo */}
-      <div className="mt-12 border border-white/15 bg-neutral-950 p-6 sm:p-8">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="space-y-1">
-            <div className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase">
-              PROPIEDAD & DIRECCIÓN INDEPENDIENTE
-            </div>
-            <div className="text-sm font-medium text-white">
-              Iniciativa desarrollada por Gerardo Gonza
-            </div>
-            <p className="text-xs text-neutral-400 max-w-3xl">
-              Las aplicaciones y proyectos distribuidos bajo el sello <strong>Datelar Labs</strong> (incluyendo <em>Music Muv</em> y las herramientas de ingeniería en telecomunicaciones) son proyectos de autoría y propiedad exclusiva de <strong>Gerardo Gonza</strong> (@Theter).
-            </p>
+      {/* Direct, clean attribution as requested */}
+      <div className="mt-12 border border-white/15 bg-neutral-950 p-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono text-xs">
+          <div className="text-white font-medium">
+            Iniciativa desarrollada por Gerardo Gonza
           </div>
-
-          <div className="shrink-0 font-mono text-xs text-neutral-400 border border-white/10 px-3 py-2 bg-black">
-            GERARDO GONZA // LEAD
+          <div className="text-neutral-500 text-[10px] tracking-widest uppercase">
+            CÓDIGO ABIERTO // LABS
           </div>
         </div>
       </div>

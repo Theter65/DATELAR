@@ -1,47 +1,52 @@
 export function Products() {
   return (
     <div className="w-full">
-      {/* 1. SENTINEL DRIVE */}
+      {/* 1. SENTNLDRIVE */}
       <section
-        id="sentinel-drive"
+        id="sentnldrive"
         className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
       >
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="space-y-6 lg:col-span-6">
-            <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-              01 &middot; Telemetría Vehicular
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+                01 &middot; Telemetría Vehicular
+              </span>
+              <span className="border border-white/20 bg-white/5 px-2 py-0.5 text-[10px] font-mono tracking-wider text-white">
+                FASE BETA
+              </span>
+            </div>
 
             <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-              SENTINEL DRIVE
+              SENTNLDRIVE
             </h2>
 
             <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
-              Plataforma de telemetría de alta sensibilidad y gestión operativa de flotas. 
-              Monitoreo continuo de ubicación satelital, análisis de patrones de conducción 
-              y diagnóstico mecánico directo mediante puerto OBD-II y red CAN.
+              Plataforma de telemetría vehicular actualmente en <strong>fase beta</strong>. 
+              Enfocada en el monitoreo satelital de precisión, análisis de trayectorias, control 
+              de límites de velocidad y seguridad operativa de flotas en tiempo real.
             </p>
 
             {/* Technical Specs List */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 max-w-xl text-xs text-neutral-400 font-mono">
               <div className="border border-white/10 p-3 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">RASTREO GPS EN VIVO</div>
+                <div className="text-white font-sans font-medium mb-1">RASTREO GPS DE ALTA SENSIBILIDAD</div>
                 <div>Actualización continua &lt;2s con búfer de memoria sin cobertura.</div>
               </div>
 
               <div className="border border-white/10 p-3 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">DIAGNÓSTICO CAN / OBD-II</div>
-                <div>Lectura de RPM, temperatura, velocidad real y códigos DTC.</div>
+                <div className="text-white font-sans font-medium mb-1">GEOCERCAS INTELIGENTES</div>
+                <div>Alertas instantáneas por desvío de ruta, paradas o zonas restringidas.</div>
               </div>
 
               <div className="border border-white/10 p-3 bg-neutral-950">
                 <div className="text-white font-sans font-medium mb-1">CORTE DE MOTOR REMOTO</div>
-                <div>Inmovilización preventiva segura activada vía plataforma web/móvil.</div>
+                <div>Inmovilización preventiva segura gestionada vía plataforma web/móvil.</div>
               </div>
 
               <div className="border border-white/10 p-3 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">GEOCERCAS INTELIGENTES</div>
-                <div>Alertas instantáneas por desvío de ruta o uso no autorizado.</div>
+                <div className="text-white font-sans font-medium mb-1">INTERFAZ CAN BUS (ROADMAP)</div>
+                <div>Módulo de lectura de bus CAN y telemetría de motor en etapa de desarrollo.</div>
               </div>
             </div>
 
@@ -50,7 +55,7 @@ export function Products() {
                 href="#contacto"
                 className="inline-block border border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
               >
-                SOLICITAR DEMO DE SENTINEL DRIVE
+                PROBAR BETA DE SENTNLDRIVE
               </a>
             </div>
           </div>
@@ -60,38 +65,40 @@ export function Products() {
             <div className="border border-white/15 bg-neutral-950 p-6 sm:p-8 font-mono text-xs">
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
                 <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-white" />
-                  <span className="text-white font-semibold tracking-wider">UNIT #SD-8820 // ACTIVE</span>
+                  <span className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                  <span className="text-white font-semibold tracking-wider">UNIT #SND-01 // BETA STREAM</span>
                 </div>
-                <span className="text-neutral-500 text-[10px] tracking-widest">4G LTE DUAL-BAND</span>
+                <span className="text-neutral-400 text-[10px] tracking-widest border border-white/10 px-2 py-0.5">
+                  FIRMWARE V0.8
+                </span>
               </div>
 
               <div className="grid grid-cols-2 gap-4 py-6 border-b border-white/10">
                 <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">VELOCIDAD</div>
-                  <div className="text-2xl font-normal text-white mt-1">74.2 <span className="text-xs text-neutral-400">KM/H</span></div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">VELOCIDAD GPS</div>
+                  <div className="text-2xl font-normal text-white mt-1">64.0 <span className="text-xs text-neutral-400">KM/H</span></div>
                 </div>
 
                 <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">NIVEL COMBUSTIBLE</div>
-                  <div className="text-2xl font-normal text-white mt-1">82 <span className="text-xs text-neutral-400">%</span></div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">BATERÍA DE RESPALDO</div>
+                  <div className="text-2xl font-normal text-white mt-1">98 <span className="text-xs text-neutral-400">%</span></div>
                 </div>
 
                 <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">TEMPERATURA MOTOR</div>
-                  <div className="text-2xl font-normal text-white mt-1">88 <span className="text-xs text-neutral-400">°C</span></div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">ESTADO ENLACE</div>
+                  <div className="text-2xl font-normal text-white mt-1">4G LTE <span className="text-xs text-neutral-400">ONLINE</span></div>
                 </div>
 
                 <div>
                   <div className="text-neutral-500 text-[10px] tracking-widest uppercase">ENLACE SATELITAL</div>
-                  <div className="text-2xl font-normal text-white mt-1">16 <span className="text-xs text-neutral-400">SATS FIXED</span></div>
+                  <div className="text-2xl font-normal text-white mt-1">14 <span className="text-xs text-neutral-400">SATS FIXED</span></div>
                 </div>
               </div>
 
               <div className="pt-4 text-neutral-400 text-[11px] space-y-1">
-                <div>&gt; OBD2_STATUS: NOMINAL (NO ACTIVE DTC CODES)</div>
-                <div>&gt; GEOFENCE_CHECK: WITHIN_DESIGNATED_SECTOR</div>
-                <div>&gt; LAST_PACKET_LATENCY: 140MS</div>
+                <div>&gt; SYSTEM_MODE: BETA_TELEMETRY_RECORDING</div>
+                <div>&gt; GEOFENCE_CHECK: WITHIN_CORRIDOR_SECTOR</div>
+                <div>&gt; CAN_BUS_INTERFACE: IN_DEVELOPMENT (STAGE_2)</div>
               </div>
             </div>
           </div>

@@ -17,15 +17,15 @@ export function Hero() {
         </h1>
 
         <p className="max-w-2xl text-base text-neutral-400 font-normal leading-relaxed">
-          Diseñamos y desplegamos infraestructura tecnológica de alta precisión: telemetría vehicular avanzada con Sentinel Drive, control de accesos QR y hardware industrial a medida.
+          Diseñamos y desplegamos infraestructura tecnológica de alta precisión: telemetría vehicular con SENTNLDRIVE (actualmente en fase beta), control de accesos QR y hardware industrial a medida.
         </p>
 
         <div className="flex flex-wrap items-center gap-4 pt-4">
           <a
-            href="#sentinel-drive"
+            href="#sentnldrive"
             className="border border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
           >
-            EXPLORAR SENTINEL DRIVE
+            EXPLORAR SENTNLDRIVE (BETA)
           </a>
           <a
             href="#contacto"
@@ -41,10 +41,10 @@ export function Hero() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 starlink-border-t pt-8">
           <div>
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">
-              Telemetría
+              Telemetría [BETA]
             </div>
-            <div className="text-xl font-medium text-white mt-1">Sentinel Drive</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Diagnóstico CAN / OBD-II</div>
+            <div className="text-xl font-medium text-white mt-1">SENTNLDRIVE</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Rastreo GPS & Geocercas</div>
           </div>
 
           <div>
@@ -74,7 +74,7 @@ export function Hero() {
 
         <div className="flex justify-center pt-8">
           <a
-            href="#sentinel-drive"
+            href="#sentnldrive"
             className="flex items-center gap-2 text-[10px] tracking-[0.25em] text-neutral-500 hover:text-white uppercase transition"
           >
             <span>DESPLAZAR</span>

@@ -8,7 +8,7 @@ export function ContactSection() {
     name: "",
     email: "",
     phone: "",
-    service: "SENTINEL DRIVE",
+    service: "SENTNLDRIVE",
     message: "",
   });
 
@@ -31,13 +31,14 @@ export function ContactSection() {
           </h2>
 
           <p className="text-sm text-neutral-400 font-light leading-relaxed max-w-md">
-            Consulta sobre la integración de <strong>Sentinel Drive</strong> en tu flota, 
+            Consulta sobre el despliegue de <strong>SENTNLDRIVE</strong> (fase beta), 
             la implementación de <strong>Datelar Access</strong> para tu recinto o el desarrollo de 
-            soluciones IoT a medida.
+            hardware y soluciones IoT a medida.
           </p>
 
           <div className="pt-6 font-mono text-xs text-neutral-400 space-y-2 border-t border-white/10">
             <div>&bull; EMAIL: contacto@datelar.com</div>
+            <div>&bull; LÍNEA CORPORATIVA: Próximamente (En proceso de habilitación)</div>
             <div>&bull; SEDE: Ecuador &middot; Operación Regional</div>
             <div>&bull; TIEMPO ESTIMADO DE RESPUESTA: &lt; 24 HORAS</div>
           </div>
@@ -116,7 +117,7 @@ export function ContactSection() {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full border border-white/20 bg-black px-4 py-3 text-sm text-white focus:border-white focus:outline-none"
                   >
-                    <option value="SENTINEL DRIVE" className="bg-black text-white">SENTINEL DRIVE (TELEMETRÍA)</option>
+                    <option value="SENTNLDRIVE" className="bg-black text-white">SENTNLDRIVE (TELEMETRÍA - FASE BETA)</option>
                     <option value="DATELAR ACCESS" className="bg-black text-white">DATELAR ACCESS (CONTROL QR)</option>
                     <option value="HARDWARE & IOT" className="bg-black text-white">HARDWARE & IOT A MEDIDA</option>
                     <option value="DATELAR LABS" className="bg-black text-white">DATELAR LABS (COLABORACIÓN)</option>

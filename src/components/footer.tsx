@@ -7,7 +7,7 @@ export function Footer() {
         <BrandLogo size={22} />
 
         <div className="flex flex-wrap gap-6 text-[11px] font-mono tracking-wider text-neutral-400">
-          <a href="#sentinel-drive" className="hover:text-white transition">SENTINEL DRIVE</a>
+          <a href="#sentnldrive" className="hover:text-white transition">SENTNLDRIVE</a>
           <a href="#accesos-qr" className="hover:text-white transition">ACCESOS QR</a>
           <a href="#hardware-iot" className="hover:text-white transition">HARDWARE & IOT</a>
           <a href="#datelar-labs" className="hover:text-white transition">DATELAR LABS</a>
@@ -23,7 +23,7 @@ export function Footer() {
         </div>
 
         <div>
-          * DATELAR LABS Y LA APLICACIÓN MUSIC MUV SON PROYECTOS DE AUTORÍA EXCLUSIVA DE GERARDO GONZA
+          * DATELAR LABS: INICIATIVA DESARROLLADA POR GERARDO GONZA
         </div>
       </div>
     </footer>
