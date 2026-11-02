@@ -2,15 +2,15 @@ export function Founders() {
   const founders = [
     {
       name: "ELIO ROMERO",
-      role: "COFUNDADOR // ESTRATEGIA, IOT & DESARROLLO DE HARDWARE",
-      bio: "Especializado en el desarrollo de hardware embebido, diseño electrónico, integración de sensores IoT y despliegue de infraestructura tecnológica de campo para Datelar.",
-      discipline: "INGENIERÍA DE HARDWARE, IOT & ESTRATEGIA OPERATIVA",
+      role: "COFUNDADOR // DESARROLLO DE HARDWARE & IOT",
+      bio: "Desarrollo de hardware embebido, diseño electrónico, integración de sensores IoT e infraestructura tecnológica de campo.",
+      discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
     {
-      name: "GERARDO GONZA",
-      role: "COFUNDADOR // SOFTWARE, TELECOM & DATELAR LABS",
-      bio: "Conocido en el entorno técnico como Theter. Diseña la arquitectura de software, plataformas cloud, protocolos de telecomunicaciones y dirige la división Datelar Labs.",
-      discipline: "INGENIERÍA DE SOFTWARE, REDES & DATELAR LABS",
+      name: "GERARDO GONZA (THETER)",
+      role: "COFUNDADOR // ARQUITECTURA DE SOFTWARE",
+      bio: "Conocido como Theter. Diseño la arquitectura de software de plataformas digitales para el ecosistema Datelar.",
+      discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
   ];
 
@@ -24,6 +24,9 @@ export function Founders() {
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl mt-3">
             EQUIPO FUNDADOR
           </h2>
+          <p className="mt-3 text-sm text-neutral-400 font-mono">
+            Ingenieros en Telecomunicaciones graduados en la Universidad Nacional de Loja (UNL).
+          </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
