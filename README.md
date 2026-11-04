@@ -1,13 +1,13 @@
 # Datelar - Web Oficial & Landing Page
 
-Landing page oficial de **Datelar**: soluciones de hardware IoT, telemetría vehicular avanzada (**Sentinel Drive**), gestión de accesos QR y el laboratorio de software libre **Datelar Labs**.
+Landing page oficial de **Datelar**: soluciones de hardware IoT, telemetría vehicular avanzada (**SENTNLDRIVE** en fase beta), gestión de accesos QR (**Datelar Access**) y el laboratorio de software e innovación **Datelar Labs**.
 
 ## Ecosistema Datelar
 
-* **Sentinel Drive**: Telemetría vehicular de alta sensibilidad, monitoreo de flotas en tiempo real, corte remoto de motor y diagnóstico CAN/OBD-II.
+* **SENTNLDRIVE [FASE BETA]**: Telemetría vehicular de alta sensibilidad, monitoreo de flotas en tiempo real, corte remoto de motor y roadmap CAN bus.
 * **Datelar Access**: Plataforma inteligente de control de aforo y boletería mediante códigos QR dinámicos e infalsificables con validación offline.
 * **Hardware & IoT a Medida**: Diseño electrónico de PCB, sensores embebidos industriales y conectividad (4G LTE, NB-IoT, LoRaWAN).
-* **Datelar Labs**: División de software libre creada y dirigida de manera independiente por **Gerardo Gonza (@Theter)**, hogar de aplicaciones como **Music Muv** y herramientas para ingenieros de telecomunicaciones.
+* **Datelar Labs**: División de software y aplicaciones creada y dirigida por **Gerardo Gonza**, hogar de proyectos como **Music Muv**, utilidades para ingenieros de telecomunicaciones y scripts embebidos.
 
 ## Equipo Fundador
 

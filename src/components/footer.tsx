@@ -19,11 +19,11 @@ export function Footer() {
 
       <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[10px] font-mono text-neutral-500">
         <div>
-          DATELAR &copy; {new Date().getFullYear()} &middot; FUNDADA POR ELIO ROMERO Y GERARDO GONZA (THETER) &middot; INGENIEROS EN TELECOMUNICACIONES (UNL) &middot; TODOS LOS DERECHOS RESERVADOS
+          DATELAR &copy; {new Date().getFullYear()} &middot; FUNDADA POR ELIO ROMERO Y GERARDO GONZA &middot; INGENIEROS EN TELECOMUNICACIONES (UNL) &middot; TODOS LOS DERECHOS RESERVADOS
         </div>
 
         <div>
-          * DATELAR LABS: INICIATIVA DESARROLLADA POR GERARDO GONZA
+          * DATELAR LABS: PROYECTOS CREADOS POR GERARDO GONZA
         </div>
       </div>
     </footer>

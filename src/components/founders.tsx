@@ -7,9 +7,9 @@ export function Founders() {
       discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
     {
-      name: "GERARDO GONZA (THETER)",
+      name: "GERARDO GONZA",
       role: "COFUNDADOR // ARQUITECTURA DE SOFTWARE",
-      bio: "Conocido como Theter. Diseño la arquitectura de software de plataformas digitales para el ecosistema Datelar.",
+      bio: "Diseño la arquitectura de software de plataformas digitales para el ecosistema Datelar.",
       discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
   ];
