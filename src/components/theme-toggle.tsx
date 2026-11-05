@@ -48,16 +48,16 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
       type="button"
       aria-label="Cambiar tema claro / oscuro"
       title={theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
-      className={`relative inline-flex items-center justify-center w-8 h-8 rounded-lg border transition shadow-sm ${
+      className={`relative inline-flex items-center justify-center w-8 h-8 rounded-lg border transition ${
         theme === "dark"
           ? "border-neutral-800 bg-neutral-950 text-neutral-300 hover:text-white hover:border-neutral-700"
-          : "border-slate-300 bg-white text-slate-700 hover:text-slate-900 hover:border-slate-400"
+          : "border-neutral-200 bg-white text-neutral-700 hover:text-neutral-900 hover:border-neutral-300"
       } ${className}`}
     >
       {theme === "dark" ? (
-        <Sun className="h-4 w-4 text-amber-400 transition" />
+        <Sun className="h-4 w-4 text-neutral-200 transition" />
       ) : (
-        <Moon className="h-4 w-4 text-cyan-600 transition" />
+        <Moon className="h-4 w-4 text-neutral-700 transition" />
       )}
     </button>
   );

@@ -44,10 +44,10 @@ export function Hero() {
           </div>
 
           <a href="/access" className="block group transition">
-            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition">
+            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-black dark:group-hover:text-neutral-300 transition">
               Control de Accesos &rarr;
             </div>
-            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition">Datelar Access</div>
+            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-black dark:group-hover:text-neutral-300 transition">Datelar Access</div>
             <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Entradas seguras sin colas</div>
           </a>
 

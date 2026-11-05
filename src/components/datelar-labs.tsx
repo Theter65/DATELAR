@@ -83,7 +83,7 @@ export function DatelarLabs() {
             <div className="pt-6 mt-6 border-t border-white/5 flex items-center justify-between font-mono text-[11px] text-neutral-400">
               <span className="text-neutral-300">ESTADO: ACTIVO // DISPONIBLE</span>
               {item.title === "DATELAR ACCESS" ? (
-                <a href="/access" className="text-cyan-400 hover:text-white transition flex items-center gap-1 font-sans text-xs font-semibold">
+                <a href="/access" className="text-white hover:underline transition flex items-center gap-1 font-sans text-xs font-semibold">
                   <span>Abrir Portal</span>
                   <ArrowUpRight className="h-3 w-3" />
                 </a>
