@@ -23,7 +23,7 @@ export function Footer() {
         </div>
 
         <div>
-          * DATELAR LABS: PRODUCTOS Y SOFTWARE CREADOS POR GERARDO GONZA (DATELAR ACCESS & PROYECTOS OPEN SOURCE)
+          * DATELAR LABS: DIVISIÓN DE DATELAR LABS CREADA POR GERARDO GONZA
         </div>
       </div>
     </footer>

@@ -4,31 +4,31 @@ export function DatelarLabs() {
   const projects = [
     {
       title: "DATELAR ACCESS",
-      category: "DATELAR LABS // BOLETERÍA & AFORO",
-      desc: "Plataforma inteligente de control de accesos, aforo masivo en tiempo real y emisión de entradas digitales con códigos criptográficos QR. Arquitectura completa concebida y desarrollada por Gerardo Gonza: Web Next.js 15, App móvil Flutter (iOS/Android) y validación atómica en PostgreSQL.",
-      tag: "FLAGSHIP PLATFORM",
-      href: "#accesos-qr",
+      category: "PRODUCTO DE DATELAR LABS",
+      desc: "Plataforma inteligente de control de accesos, aforo masivo en tiempo real y emisión de entradas digitales con códigos criptográficos QR. Arquitectura completa con Web Next.js 15, App móvil Flutter (iOS/Android) y validación atómica en PostgreSQL.",
+      tag: "PRODUCTO DATELAR LABS",
+      authorTag: "PRODUCTO DE DATELAR LABS",
     },
     {
       title: "MUSIC MUV",
       category: "DATELAR LABS // AUDIO ENGINE",
-      desc: "Reproductor de audio minimalista de código abierto concebido y desarrollado por Gerardo Gonza. Enfoque en ultra-bajo consumo de memoria, decodificación limpia y fidelidad acústica sin dependencias invasivas.",
+      desc: "Reproductor de audio minimalista de código abierto. Enfoque en ultra-bajo consumo de memoria, decodificación limpia y fidelidad acústica sin dependencias invasivas.",
       tag: "AUDIO CORE",
-      href: "#contacto",
+      authorTag: "POR GERARDO GONZA",
     },
     {
       title: "TELECOM TOOLS SUITE",
       category: "DATELAR LABS // TELECOM & RF",
-      desc: "Colección integral de herramientas de cálculo de ingeniería desarrollada por Gerardo Gonza: balance de enlace satelital y terrestre, presupuesto de potencia óptica (FTTH) y subneteo IP para despliegues de red.",
+      desc: "Colección integral de herramientas de cálculo de ingeniería: balance de enlace satelital y terrestre, presupuesto de potencia óptica (FTTH) y subneteo IP para despliegues de red.",
       tag: "FIELD UTILITIES",
-      href: "#contacto",
+      authorTag: "POR GERARDO GONZA",
     },
     {
       title: "EMBEDDED DEV SCRIPTS",
       category: "DATELAR LABS // HARDWARE & IOT",
-      desc: "Suite de utilidades para análisis de protocolos seriales (UART/SPI/I2C), emulación de sensores industriales y validación de tramas de telemetría, creada por Gerardo Gonza.",
+      desc: "Suite de utilidades para análisis de protocolos seriales (UART/SPI/I2C), emulación de sensores industriales y validación de tramas de telemetría.",
       tag: "OPEN SCRIPTS",
-      href: "#contacto",
+      authorTag: "POR GERARDO GONZA",
     },
   ];
 
@@ -48,7 +48,7 @@ export function DatelarLabs() {
           </h2>
 
           <p className="text-base text-neutral-300 font-normal leading-relaxed">
-            División de software, plataformas digitales y utilidades de ingeniería creadas por <strong>Gerardo Gonza</strong> dentro del ecosistema Datelar. Un laboratorio dedicado al desarrollo de soluciones tecnológicas de alto impacto como <strong>Datelar Access</strong>, herramientas de telecomunicaciones y código abierto.
+            División de software, experimentación técnica y utilidades de ingeniería de Datelar.
           </p>
         </div>
 
@@ -82,21 +82,21 @@ export function DatelarLabs() {
 
             <div className="pt-6 mt-6 border-t border-white/5 flex items-center justify-between font-mono text-[11px] text-neutral-400">
               <span className="text-neutral-300">ESTADO: ACTIVO // DISPONIBLE</span>
-              <span className="text-[10px] text-neutral-500 uppercase">POR GERARDO GONZA</span>
+              <span className="text-[10px] text-neutral-500 uppercase">{item.authorTag}</span>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Direct, clean attribution as requested */}
+      {/* Direct, clean attribution as requested: División de Datelar Labs creada por Gerardo Gonza */}
       <div className="mt-12 border border-white/15 bg-neutral-950 p-6 sm:p-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono text-xs">
           <div>
-            <div className="text-white font-medium text-sm tracking-wide">
-              DATELAR LABS &middot; DIVISIÓN CREADA Y DESARROLLADA POR GERARDO GONZA
+            <div className="text-white font-medium text-sm tracking-wide uppercase">
+              DIVISIÓN DE DATELAR LABS CREADA POR GERARDO GONZA
             </div>
             <div className="text-neutral-400 text-xs mt-1 font-sans">
-              Productos insignia como <strong>Datelar Access</strong>, reproductores de audio, utilidades de telecomunicaciones y scripts de ingeniería han sido concebidos y desarrollados por Gerardo Gonza dentro de Datelar.
+              Laboratorio de innovación, desarrollo de plataformas digitales y utilidades técnicas dentro del ecosistema Datelar.
             </div>
           </div>
           <div className="text-neutral-500 text-[10px] tracking-widest uppercase sm:text-right whitespace-nowrap">

@@ -49,10 +49,10 @@ export function Hero() {
 
           <div>
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">
-              Datelar Labs
+              Control de Accesos
             </div>
             <div className="text-xl font-medium text-white mt-1">Datelar Access</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Control QR &middot; Gerardo Gonza</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Producto de Datelar Labs</div>
           </div>
 
           <div>
