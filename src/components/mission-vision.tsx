@@ -21,7 +21,7 @@ export function MissionVision() {
               “Diseñar, integrar y desplegar soluciones de <span className="font-medium text-white">hardware IoT y software</span> que transformen datos en decisiones operativas eficientes.”
             </p>
             <div className="pt-4 text-xs font-mono text-neutral-400">
-              FOCO: CONFIABILIDAD DE CAMPO &bull; INTEGRACIÓN HARDWARE-NUBE &bull; TELEMETRÍA
+              FOCO: SEGURIDAD OPERATIVA &bull; CONECTIVIDAD TOTAL &bull; CONTROL EN TIEMPO REAL
             </div>
           </div>
 
@@ -31,10 +31,10 @@ export function MissionVision() {
               PROYECCIÓN // VISIÓN
             </span>
             <p className="text-2xl sm:text-3xl font-light text-white leading-snug">
-              “Consolidarnos como el ecosistema referente en <span className="font-medium text-white">innovación aplicada, telemetría e IoT</span>, reconocidos por la solidez técnica de nuestras plataformas y el impacto de nuestro software.”
+              “Consolidarnos como el referente en soluciones de seguridad, rastreo y control de accesos, reconocidos por la confiabilidad de nuestros servicios y la satisfacción de nuestros clientes.”
             </p>
             <div className="pt-4 text-xs font-mono text-neutral-400">
-              FOCO: ESCALABILIDAD &bull; PRECISIÓN INDUSTRIAL &bull; CÓDIGO ABIERTO
+              FOCO: CONFIABILIDAD &bull; FACILIDAD DE USO &bull; RESULTADOS PRÁCTICOS
             </div>
           </div>
         </div>

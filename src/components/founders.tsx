@@ -2,14 +2,14 @@ export function Founders() {
   const founders = [
     {
       name: "ELIO ROMERO",
-      role: "COFUNDADOR // DESARROLLO DE HARDWARE & IOT",
-      bio: "Desarrollo de hardware embebido, diseño electrónico, integración de sensores IoT e infraestructura tecnológica de campo.",
+      role: "COFUNDADOR // DISPOSITIVOS & HARDWARE IOT",
+      bio: "Especialista en el desarrollo de dispositivos electrónicos, automatización y soluciones de sensores para operaciones en campo.",
       discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
     {
       name: "GERARDO GONZA",
       role: "COFUNDADOR // ARQUITECTURA DE SOFTWARE",
-      bio: "Diseño la arquitectura de software de plataformas digitales para el ecosistema Datelar.",
+      bio: "Diseño la arquitectura de plataformas digitales y sistemas de software orientados a la seguridad, control y experiencia de usuario.",
       discipline: "INGENIERO EN TELECOMUNICACIONES (UNL)",
     },
   ];

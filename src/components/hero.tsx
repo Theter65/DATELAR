@@ -9,15 +9,15 @@ export function Hero() {
       {/* Center / Main Hero Block */}
       <div className="max-w-4xl space-y-6">
         <p className="text-[11px] font-semibold tracking-[0.25em] text-neutral-400 uppercase">
-          Ecosistema Tecnológico &middot; Hardware & Software
+          Ecosistema Tecnológico &middot; Seguridad, Control & Eficiencia
         </p>
 
         <h1 className="text-4xl font-medium tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.05]">
-          Soluciones de hardware IoT y software que transforman datos en decisiones operativas eficientes.
+          Soluciones de hardware y plataformas digitales que impulsan la seguridad y el control de tus operaciones.
         </h1>
 
         <p className="max-w-2xl text-base text-neutral-400 font-normal leading-relaxed">
-          Diseñamos y desplegamos infraestructura tecnológica de alta precisión: telemetría vehicular con SENTNLDRIVE (actualmente en fase beta), control de accesos QR y hardware industrial a medida.
+          Protege tus vehículos con telemetría en tiempo real, agiliza el acceso a eventos sin filas ni fraudes y automatiza tus equipos con tecnología confiable y fácil de usar.
         </p>
 
         <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -25,13 +25,13 @@ export function Hero() {
             href="#sentnldrive"
             className="border border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
           >
-            EXPLORAR SENTNLDRIVE (BETA)
+            CONOCER SENTNLDRIVE (BETA)
           </a>
           <a
             href="#contacto"
             className="border border-white/40 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:border-white hover:bg-white/5 uppercase"
           >
-            SOLICITAR ASESORÍA
+            SOLICITAR INFORMACIÓN
           </a>
         </div>
       </div>
@@ -44,7 +44,7 @@ export function Hero() {
               Telemetría [BETA]
             </div>
             <div className="text-xl font-medium text-white mt-1">SENTNLDRIVE</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Rastreo GPS & Geocercas</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Seguridad vehicular & geocercas</div>
           </div>
 
           <div>
@@ -52,15 +52,15 @@ export function Hero() {
               Control de Accesos
             </div>
             <div className="text-xl font-medium text-white mt-1">Datelar Access</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Producto de Datelar Labs</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Entradas seguras sin colas</div>
           </div>
 
           <div>
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">
-              Ingeniería
+              Dispositivos
             </div>
-            <div className="text-xl font-medium text-white mt-1">IoT & Hardware</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Diseño PCB & firmware</div>
+            <div className="text-xl font-medium text-white mt-1">Equipos a Medida</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Monitoreo & automatización</div>
           </div>
 
           <div>
@@ -68,7 +68,7 @@ export function Hero() {
               Innovación
             </div>
             <div className="text-xl font-medium text-white mt-1">Datelar Labs</div>
-            <div className="text-xs text-neutral-400 mt-0.5">Music Muv & Telecom Suite</div>
+            <div className="text-xs text-neutral-400 mt-0.5">Software & utilidades prácticas</div>
           </div>
         </div>
 

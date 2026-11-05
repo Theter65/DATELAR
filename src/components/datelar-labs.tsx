@@ -5,29 +5,29 @@ export function DatelarLabs() {
     {
       title: "DATELAR ACCESS",
       category: "PRODUCTO DE DATELAR LABS",
-      desc: "Plataforma inteligente de control de accesos, aforo masivo en tiempo real y emisión de entradas digitales con códigos criptográficos QR. Arquitectura completa con Web Next.js 15, App móvil Flutter (iOS/Android) y validación atómica en PostgreSQL.",
-      tag: "PRODUCTO DATELAR LABS",
+      desc: "Solución completa para control de acceso, venta de entradas digitales y supervisión de aforo en eventos y recintos. Elimina las filas en las puertas, evita el fraude por reventa y funciona sin fallas incluso sin internet.",
+      tag: "PLATAFORMA INSIGNIA",
       authorTag: "PRODUCTO DE DATELAR LABS",
     },
     {
       title: "MUSIC MUV",
-      category: "DATELAR LABS // AUDIO ENGINE",
-      desc: "Reproductor de audio minimalista de código abierto. Enfoque en ultra-bajo consumo de memoria, decodificación limpia y fidelidad acústica sin dependencias invasivas.",
-      tag: "AUDIO CORE",
+      category: "DATELAR LABS // REPRODUCTOR DE AUDIO",
+      desc: "Reproductor de música ligero, rápido y sin publicidad molesta. Diseñado para disfrutar de tus canciones favoritas con alta calidad de audio, navegación limpia y mínimo consumo de batería.",
+      tag: "APLICACIÓN",
       authorTag: "POR GERARDO GONZA",
     },
     {
       title: "TELECOM TOOLS SUITE",
-      category: "DATELAR LABS // TELECOM & RF",
-      desc: "Colección integral de herramientas de cálculo de ingeniería: balance de enlace satelital y terrestre, presupuesto de potencia óptica (FTTH) y subneteo IP para despliegues de red.",
-      tag: "FIELD UTILITIES",
+      category: "DATELAR LABS // TELECOMUNICACIONES",
+      desc: "Colección práctica de herramientas y calculadoras para ingenieros y técnicos: cálculo de cobertura inalámbrica, estimación de enlaces de fibra óptica y planificación de redes.",
+      tag: "UTILIDADES PRÁCTICAS",
       authorTag: "POR GERARDO GONZA",
     },
     {
       title: "EMBEDDED DEV SCRIPTS",
-      category: "DATELAR LABS // HARDWARE & IOT",
-      desc: "Suite de utilidades para análisis de protocolos seriales (UART/SPI/I2C), emulación de sensores industriales y validación de tramas de telemetría.",
-      tag: "OPEN SCRIPTS",
+      category: "DATELAR LABS // DISPOSITIVOS & SENSORES",
+      desc: "Herramientas de verificación y diagnóstico para asegurar que los sensores y equipos de campo transmitan datos confiables antes de su instalación final.",
+      tag: "HERRAMIENTAS",
       authorTag: "POR GERARDO GONZA",
     },
   ];
@@ -40,7 +40,7 @@ export function DatelarLabs() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
         <div className="space-y-4 max-w-2xl">
           <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-            04 &middot; División de Software & Innovación
+            04 &middot; Innovación & Aplicaciones
           </span>
 
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -48,7 +48,7 @@ export function DatelarLabs() {
           </h2>
 
           <p className="text-base text-neutral-300 font-normal leading-relaxed">
-            División de software, experimentación técnica y utilidades de ingeniería de Datelar.
+            El laboratorio de innovación y software de Datelar. Desarrollamos aplicaciones especializadas y herramientas útiles pensadas para resolver problemas concretos de forma sencilla y eficiente.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function DatelarLabs() {
             className="inline-flex items-center gap-2 border border-white/30 bg-transparent px-5 py-2.5 text-xs font-medium tracking-[0.15em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
           >
             <Code2 className="h-4 w-4" />
-            <span>SOLICITAR ACCESO AL CÓDIGO</span>
+            <span>SOLICITAR MÁS INFORMACIÓN</span>
             <ArrowUpRight className="h-3 w-3" />
           </a>
         </div>
@@ -96,11 +96,11 @@ export function DatelarLabs() {
               DIVISIÓN DE DATELAR LABS CREADA POR GERARDO GONZA
             </div>
             <div className="text-neutral-400 text-xs mt-1 font-sans">
-              Laboratorio de innovación, desarrollo de plataformas digitales y utilidades técnicas dentro del ecosistema Datelar.
+              Espacio dedicado a la creación de plataformas digitales, aplicaciones y herramientas funcionales dentro de Datelar.
             </div>
           </div>
           <div className="text-neutral-500 text-[10px] tracking-widest uppercase sm:text-right whitespace-nowrap">
-            DATELAR LABS // UNL INGENIERÍA
+            DATELAR LABS // INNOVACIÓN PRÁCTICA
           </div>
         </div>
       </div>
