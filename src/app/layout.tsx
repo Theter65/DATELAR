@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/brand/06-Iconos-app-y-redes/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className="min-h-screen bg-black text-white antialiased selection:bg-white selection:text-black">
+      <body className="min-h-screen antialiased transition-colors duration-200">
         {children}
       </body>
     </html>

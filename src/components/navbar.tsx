@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BrandLogo } from "./brand-logo";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-black/80 backdrop-blur-md starlink-border-b">
+    <header className="fixed top-0 left-0 z-50 w-full bg-white/90 dark:bg-black/80 backdrop-blur-md starlink-border-b transition-colors">
       <div className="flex h-16 w-full items-center justify-between px-6 md:px-12">
         <a href="#" className="transition opacity-90 hover:opacity-100">
           <BrandLogo size={24} />
@@ -29,31 +30,34 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-[11px] font-medium tracking-[0.18em] text-neutral-400 transition hover:text-white"
+              className="text-[11px] font-medium tracking-[0.18em] text-neutral-600 dark:text-neutral-400 transition hover:text-black dark:hover:text-white"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        {/* Minimal Action Button */}
-        <div className="hidden lg:flex items-center">
-          <a
-            href="#contacto"
-            className="rounded-none border border-white/30 bg-transparent px-4 py-2 text-[11px] font-medium tracking-[0.15em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
-          >
-            CONTACTO
-          </a>
-        </div>
+        {/* Action Buttons: Theme Toggle & Contact */}
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <div className="hidden lg:flex items-center">
+            <a
+              href="#contacto"
+              className="rounded-none border border-neutral-300 dark:border-white/30 bg-transparent px-4 py-2 text-[11px] font-medium tracking-[0.15em] text-neutral-800 dark:text-white transition hover:border-black dark:hover:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black uppercase"
+            >
+              CONTACTO
+            </a>
+          </div>
 
-        {/* Mobile menu trigger */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="text-white lg:hidden"
-          aria-label="Abrir menú"
-        >
-          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+          {/* Mobile menu trigger */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-neutral-800 dark:text-white lg:hidden"
+            aria-label="Abrir menú"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
