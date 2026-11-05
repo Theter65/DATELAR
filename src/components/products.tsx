@@ -152,18 +152,21 @@ export function Products() {
           </div>
 
           <div className="order-1 lg:order-2 space-y-6 lg:col-span-7">
-            <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-              02 &middot; Control de Acceso
-            </span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
+                02 &middot; Control de Acceso
+              </span>
+              <span className="border border-white/20 bg-white/5 px-2 py-0.5 text-[10px] font-mono tracking-wider text-white">
+                PRODUCTO DATELAR LABS // CREADO POR GERARDO GONZA
+              </span>
+            </div>
 
             <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
               DATELAR ACCESS
             </h2>
 
             <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
-              Gestión inteligente de boletería digital y control de aforo masivo mediante 
-              códigos QR dinámicos. Diseñado para recintos, eventos y accesos corporativos que requieren 
-              máxima velocidad y cero fraude.
+              Producto insignia de <strong>Datelar Labs</strong>, concebido y desarrollado por <strong>Gerardo Gonza</strong>. Plataforma integral de gestión de boletería digital, emisión de entradas y control de aforo masivo en tiempo real mediante códigos QR dinámicos e infalsificables, respaldada por una arquitectura web en Next.js, app móvil Flutter y validación atómica en PostgreSQL.
             </p>
 
             <div className="space-y-3 text-xs text-neutral-400 font-mono max-w-xl">
