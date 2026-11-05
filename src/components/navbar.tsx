@@ -8,12 +8,12 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "SENTNLDRIVE", href: "#sentnldrive" },
-    { label: "ACCESOS QR", href: "#accesos-qr" },
-    { label: "HARDWARE & IOT", href: "#hardware-iot" },
-    { label: "DATELAR LABS", href: "#datelar-labs" },
-    { label: "MISIÓN", href: "#mision" },
-    { label: "EQUIPO", href: "#equipo" },
+    { label: "SENTNLDRIVE", href: "/#sentnldrive" },
+    { label: "DATELAR ACCESS", href: "/access" },
+    { label: "HARDWARE & IOT", href: "/#hardware-iot" },
+    { label: "DATELAR LABS", href: "/#datelar-labs" },
+    { label: "MISIÓN", href: "/#mision" },
+    { label: "EQUIPO", href: "/#equipo" },
   ];
 
   return (

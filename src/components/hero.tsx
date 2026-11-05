@@ -47,13 +47,13 @@ export function Hero() {
             <div className="text-xs text-neutral-400 mt-0.5">Seguridad vehicular & geocercas</div>
           </div>
 
-          <div>
-            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">
-              Control de Accesos
+          <a href="/access" className="block group transition">
+            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-cyan-400 transition">
+              Control de Accesos &rarr;
             </div>
-            <div className="text-xl font-medium text-white mt-1">Datelar Access</div>
+            <div className="text-xl font-medium text-white mt-1 group-hover:text-cyan-400 transition">Datelar Access</div>
             <div className="text-xs text-neutral-400 mt-0.5">Entradas seguras sin colas</div>
-          </div>
+          </a>
 
           <div>
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">

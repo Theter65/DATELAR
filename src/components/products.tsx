@@ -193,12 +193,18 @@ export function Products() {
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap items-center gap-3">
+              <a
+                href="/access"
+                className="inline-block border-2 border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
+              >
+                INGRESAR A DATELAR ACCESS &rarr;
+              </a>
               <a
                 href="#contacto"
                 className="inline-block border border-white/40 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
               >
-                COTIZAR CONTROL DE ACCESOS
+                COTIZAR SERVICIO
               </a>
             </div>
           </div>
