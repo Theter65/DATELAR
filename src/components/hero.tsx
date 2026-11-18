@@ -19,10 +19,10 @@ export function Hero() {
 
         <div className="flex flex-wrap items-center gap-4 pt-4">
           <a
-            href="#sentnldrive"
+            href={APP_LINKS.sentnldrive}
             className="border border-neutral-900 bg-neutral-900 text-white hover:bg-neutral-800 dark:border-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
           >
-            CONOCER SENTNLDRIVE (BETA)
+            INGRESAR A SENTINEL DRIVE (BETA) &rarr;
           </a>
           <a
             href="#contacto"
@@ -36,13 +36,13 @@ export function Hero() {
       {/* Bottom Minimal Specs / Status Bar (Starlink style) */}
       <div className="w-full pt-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 starlink-border-t pt-8">
-          <div>
-            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase">
-              Telemetría [BETA]
+          <a href={APP_LINKS.sentnldrive} className="block group transition">
+            <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-black dark:group-hover:text-neutral-300 transition">
+              Telemetría [BETA] &rarr;
             </div>
-            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1">SENTNLDRIVE</div>
+            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-black dark:group-hover:text-neutral-300 transition">Sentinel Drive</div>
             <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Seguridad vehicular & geocercas</div>
-          </div>
+          </a>
 
           <a href={APP_LINKS.access} className="block group transition">
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-black dark:group-hover:text-neutral-300 transition">

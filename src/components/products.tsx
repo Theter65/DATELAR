@@ -50,12 +50,18 @@ export function Products() {
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap items-center gap-3">
               <a
-                href="#contacto"
+                href={APP_LINKS.sentnldrive}
                 className="inline-block border border-white bg-white px-7 py-3 text-xs font-semibold tracking-[0.18em] text-black transition hover:bg-neutral-200 uppercase"
               >
-                PROBAR BETA DE SENTNLDRIVE
+                INGRESAR A SENTINEL DRIVE &rarr;
+              </a>
+              <a
+                href="#contacto"
+                className="inline-block border border-white/30 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:bg-white/10 uppercase"
+              >
+                SOLICITAR ACCESO BETA
               </a>
             </div>
           </div>

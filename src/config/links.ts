@@ -14,8 +14,8 @@ export const APP_LINKS = {
     : "/access", // En local puedes usar la ruta interna /access o http://localhost:3001
     
   sentnldrive: isProd
-    ? "https://sentnl.datelar.com"
-    : "#sentnldrive",
+    ? "https://sentineldrive.datelar.com"
+    : (process.env.NEXT_PUBLIC_SENTINELDRIVE_URL || "https://sentineldrive.datelar.com"),
     
   labs: isProd
     ? "https://labs.datelar.com"

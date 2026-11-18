@@ -10,7 +10,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "SENTNLDRIVE", href: "/#sentnldrive" },
+    { label: "SENTINEL DRIVE", href: APP_LINKS.sentnldrive },
     { label: "DATELAR ACCESS", href: APP_LINKS.access },
     { label: "HARDWARE & IOT", href: "/#hardware-iot" },
     { label: "DATELAR LABS", href: "/#datelar-labs" },

@@ -1,4 +1,5 @@
 import { BrandLogo } from "./brand-logo";
+import { APP_LINKS } from "@/config/links";
 
 export function Footer() {
   return (
@@ -7,8 +8,8 @@ export function Footer() {
         <BrandLogo size={22} />
 
         <div className="flex flex-wrap gap-6 text-[11px] font-mono tracking-wider text-neutral-400">
-          <a href="#sentnldrive" className="hover:text-white transition">SENTNLDRIVE</a>
-          <a href="#accesos-qr" className="hover:text-white transition">ACCESOS QR</a>
+          <a href={APP_LINKS.sentnldrive} className="hover:text-white transition">SENTINEL DRIVE</a>
+          <a href={APP_LINKS.access} className="hover:text-white transition">DATELAR ACCESS</a>
           <a href="#hardware-iot" className="hover:text-white transition">HARDWARE & IOT</a>
           <a href="#datelar-labs" className="hover:text-white transition">DATELAR LABS</a>
           <a href="#mision" className="hover:text-white transition">MISIÓN</a>
