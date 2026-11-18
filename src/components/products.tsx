@@ -1,18 +1,55 @@
 import { APP_LINKS } from "@/config/links";
+import { BackgroundSlideshow } from "./background-slideshow";
+import {
+  MapPin,
+  ShieldCheck,
+  Power,
+  Gauge,
+  ScanFace,
+  Fingerprint,
+  QrCode,
+  CreditCard,
+  Cpu,
+  Activity,
+  Layers,
+} from "lucide-react";
+
+// Imágenes dinámicas para Sentinel Drive (buses, flotas, autos y telemetría)
+const SENTINEL_IMAGES = [
+  "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=2000&q=80",
+];
+
+// Imágenes dinámicas para Datelar Access (eventos, instituciones, discotecas y accesos)
+const ACCESS_IMAGES = [
+  "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=2000&q=80",
+  "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=80",
+];
 
 export function Products() {
   return (
     <div className="w-full">
-      {/* 1. SENTNLDRIVE */}
+      {/* 1. SENTINEL DRIVE */}
       <section
         id="sentnldrive"
-        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t overflow-hidden"
       >
-        <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
-          <div className="space-y-6 lg:col-span-6">
+        {/* Fondo dinámico de imágenes de flotas, buses y telemetría */}
+        <BackgroundSlideshow
+          images={SENTINEL_IMAGES}
+          intervalMs={6000}
+          overlayClassName="bg-black/85 backdrop-blur-[2px]"
+        />
+
+        <div className="grid gap-12 lg:grid-cols-12 lg:items-center relative z-10">
+          <div className="space-y-6 lg:col-span-7">
             <div className="flex items-center gap-3">
-              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-                01 &middot; Seguridad & Rastreo Vehicular
+              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-400 uppercase">
+                01 &middot; Telemetría Vehicular
               </span>
               <span className="border border-white/20 bg-white/5 px-2 py-0.5 text-[10px] font-mono tracking-wider text-white">
                 FASE BETA
@@ -20,33 +57,37 @@ export function Products() {
             </div>
 
             <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-              SENTNLDRIVE
+              SENTINEL DRIVE
             </h2>
 
-            <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
-              Plataforma inteligente de protección y control de vehículos para particulares y flotas comerciales. Monitorea en vivo la ubicación de tus unidades, recibe avisos inmediatos ante movimientos sospechosos y recupera el control total de tus activos.
-            </p>
-
-            {/* Benefits List */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 max-w-xl text-xs text-neutral-400 font-mono">
-              <div className="border border-white/10 p-4 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">LOCALIZACIÓN EN TIEMPO REAL</div>
-                <div>Visualiza la posición exacta de cada vehículo, sus trayectorias y paradas en cualquier momento.</div>
+            {/* Solo los 4 puntos directos requeridos, sin texto excesivo */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 max-w-xl">
+              <div className="border border-white/15 p-4 bg-neutral-950/90 flex items-center gap-3.5">
+                <MapPin className="h-5 w-5 text-white shrink-0" />
+                <span className="text-xs font-semibold text-white tracking-wide uppercase">
+                  Localización en tiempo real
+                </span>
               </div>
 
-              <div className="border border-white/10 p-4 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">ZONAS SEGURAS (GEOCERCAS)</div>
-                <div>Recibe alertas instantáneas en tu celular si un vehículo entra o sale de un perímetro autorizado.</div>
+              <div className="border border-white/15 p-4 bg-neutral-950/90 flex items-center gap-3.5">
+                <ShieldCheck className="h-5 w-5 text-white shrink-0" />
+                <span className="text-xs font-semibold text-white tracking-wide uppercase">
+                  Zonas seguras
+                </span>
               </div>
 
-              <div className="border border-white/10 p-4 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">APAGADO REMOTO DEL MOTOR</div>
-                <div>Inmoviliza el vehículo a distancia de forma segura desde la aplicación en caso de robo o emergencia.</div>
+              <div className="border border-white/15 p-4 bg-neutral-950/90 flex items-center gap-3.5">
+                <Power className="h-5 w-5 text-white shrink-0" />
+                <span className="text-xs font-semibold text-white tracking-wide uppercase">
+                  Apagado remoto
+                </span>
               </div>
 
-              <div className="border border-white/10 p-4 bg-neutral-950">
-                <div className="text-white font-sans font-medium mb-1">ALERTAS DE VELOCIDAD & USO</div>
-                <div>Notificaciones inmediatas por exceso de velocidad, horarios no autorizados y reportes detallados.</div>
+              <div className="border border-white/15 p-4 bg-neutral-950/90 flex items-center gap-3.5">
+                <Gauge className="h-5 w-5 text-white shrink-0" />
+                <span className="text-xs font-semibold text-white tracking-wide uppercase">
+                  Alertas de velocidad
+                </span>
               </div>
             </div>
 
@@ -66,105 +107,57 @@ export function Products() {
             </div>
           </div>
 
-          {/* Right: Operational Status Console */}
-          <div className="lg:col-span-6">
-            <div className="border border-white/15 bg-neutral-950 p-6 sm:p-8 font-mono text-xs">
+          {/* Right: Operational Status Console Compact */}
+          <div className="lg:col-span-5">
+            <div className="border border-white/15 bg-neutral-950/90 p-6 font-mono text-xs">
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
                 <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-white font-semibold tracking-wider">VEHÍCULO MONITOREADO // EN LÍNEA</span>
+                  <span className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                  <span className="text-white font-semibold tracking-wider">VEHÍCULO MONITOREADO</span>
                 </div>
                 <span className="text-neutral-400 text-[10px] tracking-widest border border-white/10 px-2 py-0.5">
-                  ESTADO: PROTEGIDO
+                  ACTIVO
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 py-6 border-b border-white/10">
+              <div className="grid grid-cols-2 gap-4 py-4 border-b border-white/10">
                 <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">VELOCIDAD ACTUAL</div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">VELOCIDAD</div>
                   <div className="text-2xl font-normal text-white mt-1">45.0 <span className="text-xs text-neutral-400">KM/H</span></div>
-                  <div className="text-[10px] text-neutral-500 mt-0.5">Dentro del límite seguro</div>
                 </div>
 
                 <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">BATERÍA DE RESPALDO</div>
-                  <div className="text-2xl font-normal text-white mt-1">100 <span className="text-xs text-neutral-400">%</span></div>
-                  <div className="text-[10px] text-neutral-500 mt-0.5">Protección activa 24/7</div>
-                </div>
-
-                <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">PERÍMETRO ASIGNADO</div>
-                  <div className="text-2xl font-normal text-white mt-1">ZONA <span className="text-xs text-neutral-400">CENTRO</span></div>
-                  <div className="text-[10px] text-neutral-500 mt-0.5">Sin desvíos de ruta</div>
-                </div>
-
-                <div>
-                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">ESTADO DE SEGURIDAD</div>
-                  <div className="text-2xl font-normal text-white mt-1">NORMAL <span className="text-xs text-neutral-400">OK</span></div>
-                  <div className="text-[10px] text-neutral-500 mt-0.5">Motor operativo</div>
+                  <div className="text-neutral-500 text-[10px] tracking-widest uppercase">ESTADO</div>
+                  <div className="text-2xl font-normal text-white mt-1">PROTEGIDO</div>
                 </div>
               </div>
 
-              <div className="pt-4 text-neutral-400 text-[11px] space-y-1">
-                <div>&gt; MONITOREO: RASTREO SATELITAL ACTIVO EN TIEMPO REAL</div>
-                <div>&gt; SEGURIDAD: NOTIFICACIONES AUTOMÁTICAS ACTIVADAS</div>
-                <div>&gt; HISTORIAL: RECORRIDO REGISTRADO EXITOSAMENTE</div>
+              <div className="pt-3 text-neutral-400 text-[11px] space-y-1">
+                <div>&gt; RASTREO SATELITAL: EN LÍNEA</div>
+                <div>&gt; GEOCERCA: DENTRO DEL PERÍMETRO</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. ACCESOS QR */}
+      {/* 2. DATELAR ACCESS */}
       <section
         id="accesos-qr"
-        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t overflow-hidden"
       >
-        <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
-          {/* Visual QR card */}
-          <div className="order-2 lg:order-1 lg:col-span-5">
-            <div className="border border-white/15 bg-neutral-950 p-8 flex flex-col items-center justify-center text-center">
-              <div className="border border-white/20 p-6 bg-black mb-6">
-                <svg
-                  className="w-40 h-40 text-white"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="square"
-                  strokeLinejoin="miter"
-                >
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                  <rect x="6" y="6" width="1" height="1" fill="currentColor" />
-                  <rect x="17" y="6" width="1" height="1" fill="currentColor" />
-                  <rect x="6" y="17" width="1" height="1" fill="currentColor" />
-                  <path d="M14 14h3v3h-3zM17 17h4v4h-4zM14 20h3v1h-3z" />
-                </svg>
-              </div>
+        {/* Fondo dinámico de imágenes de eventos, instituciones y discotecas */}
+        <BackgroundSlideshow
+          images={ACCESS_IMAGES}
+          intervalMs={6000}
+          overlayClassName="bg-black/85 backdrop-blur-[2px]"
+        />
 
-              <div className="font-mono text-xs text-neutral-400 space-y-1 w-full text-left starlink-border-t pt-4">
-                <div className="flex justify-between">
-                  <span>ENTRADA DIGITAL:</span>
-                  <span className="text-white">PASE AUTORIZADO</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>TIEMPO DE INGRESO:</span>
-                  <span className="text-white">INMEDIATO (SIN FILAS)</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>ESTADO:</span>
-                  <span className="text-white">CERO DUPLICACIÓN // VÁLIDO</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="order-1 lg:order-2 space-y-6 lg:col-span-7">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-                02 &middot; Control de Accesos & Boletería
+        <div className="grid gap-12 lg:grid-cols-12 lg:items-center relative z-10">
+          <div className="space-y-6 lg:col-span-7">
+            <div className="flex items-center gap-3">
+              <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-400 uppercase">
+                02 &middot; Control de Accesos
               </span>
               <span className="border border-white/20 bg-white/5 px-2 py-0.5 text-[10px] font-mono tracking-wider text-white">
                 PRODUCTO DE DATELAR LABS
@@ -175,29 +168,26 @@ export function Products() {
               DATELAR ACCESS
             </h2>
 
-            <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-xl">
-              Producto de <strong>Datelar Labs</strong>. Solución moderna de venta y validación de entradas digitales que agiliza el ingreso a tus eventos, evita colas en las puertas y elimina completamente el fraude por reventa o boletos clonados.
-            </p>
-
-            <div className="space-y-3 text-xs text-neutral-400 font-mono max-w-xl">
-              <div className="border-l-2 border-white pl-3 py-1">
-                <strong className="text-white font-sans block">Entradas Infalsificables:</strong>
-                Cada boleto es único y solo puede ser utilizado una vez. Bloquea de inmediato capturas de pantalla o reventas fraudulentas.
+            {/* Beneficios directos de Datelar Access */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 max-w-xl font-mono text-xs">
+              <div className="border border-white/10 bg-neutral-950/90 p-3.5">
+                <div className="text-white font-sans font-semibold mb-0.5">CERO COLAS EN PUERTA</div>
+                <div className="text-neutral-400 text-[11px]">Validación inmediata en menos de 1 segundo.</div>
               </div>
 
-              <div className="border-l-2 border-white pl-3 py-1">
-                <strong className="text-white font-sans block">Ingreso Rápido en Puerta:</strong>
-                Escaneo instantáneo desde cualquier celular para que los asistentes ingresen fluidamente sin esperas ni demoras.
+              <div className="border border-white/10 bg-neutral-950/90 p-3.5">
+                <div className="text-white font-sans font-semibold mb-0.5">BOLETOS INFALSIFICABLES</div>
+                <div className="text-neutral-400 text-[11px]">Códigos únicos con bloqueo anti-reventa.</div>
               </div>
 
-              <div className="border-l-2 border-white pl-3 py-1">
-                <strong className="text-white font-sans block">Funciona Siempre, Incluso sin Internet:</strong>
-                Validación garantizada en recintos cerrados, estadios o festivales de campo donde la señal móvil suele fallar.
+              <div className="border border-white/10 bg-neutral-950/90 p-3.5">
+                <div className="text-white font-sans font-semibold mb-0.5">100% OPERATIVO OFFLINE</div>
+                <div className="text-neutral-400 text-[11px]">Funciona sin señal ni conexión a internet.</div>
               </div>
 
-              <div className="border-l-2 border-white pl-3 py-1">
-                <strong className="text-white font-sans block">Aforo y Asistencia en Vivo:</strong>
-                Monitorea en tiempo real cuántas personas han ingresado al evento y el porcentaje de ocupación del recinto.
+              <div className="border border-white/10 bg-neutral-950/90 p-3.5">
+                <div className="text-white font-sans font-semibold mb-0.5">AFORO EN TIEMPO REAL</div>
+                <div className="text-neutral-400 text-[11px]">Conteo exacto de asistentes al instante.</div>
               </div>
             </div>
 
@@ -216,50 +206,93 @@ export function Products() {
               </a>
             </div>
           </div>
+
+          {/* Right: Métodos de ingreso (Detección facial, huella digital, QR y tarjeta) */}
+          <div className="lg:col-span-5">
+            <div className="border border-white/15 bg-neutral-950/90 p-6 space-y-4">
+              <div className="text-[11px] font-mono tracking-widest text-neutral-400 uppercase border-b border-white/10 pb-3">
+                MÉTODOS DE INGRESO SOPORTADOS
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div className="border border-white/10 bg-black/60 p-4 flex flex-col items-center justify-center text-center gap-2.5">
+                  <ScanFace className="h-7 w-7 text-white" />
+                  <span className="text-xs font-medium text-white tracking-wider uppercase">
+                    Detección Facial
+                  </span>
+                </div>
+
+                <div className="border border-white/10 bg-black/60 p-4 flex flex-col items-center justify-center text-center gap-2.5">
+                  <Fingerprint className="h-7 w-7 text-white" />
+                  <span className="text-xs font-medium text-white tracking-wider uppercase">
+                    Huella Digital
+                  </span>
+                </div>
+
+                <div className="border border-white/10 bg-black/60 p-4 flex flex-col items-center justify-center text-center gap-2.5">
+                  <QrCode className="h-7 w-7 text-white" />
+                  <span className="text-xs font-medium text-white tracking-wider uppercase">
+                    Código QR
+                  </span>
+                </div>
+
+                <div className="border border-white/10 bg-black/60 p-4 flex flex-col items-center justify-center text-center gap-2.5">
+                  <CreditCard className="h-7 w-7 text-white" />
+                  <span className="text-xs font-medium text-white tracking-wider uppercase">
+                    Tarjeta / NFC
+                  </span>
+                </div>
+              </div>
+
+              <div className="text-[10px] font-mono text-neutral-500 text-center pt-2">
+                APTO PARA EVENTOS &middot; INSTITUCIONES &middot; DISCOTECAS
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 3. HARDWARE & IOT */}
+      {/* 3. HARDWARE & IOT (Texto conciso y directo) */}
       <section
         id="hardware-iot"
-        className="relative flex min-h-[90vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
+        className="relative flex min-h-[75vh] w-full flex-col justify-center px-6 md:px-12 py-24 starlink-border-t"
       >
-        <div className="max-w-4xl space-y-6">
+        <div className="max-w-3xl space-y-4">
           <span className="text-[11px] font-semibold tracking-[0.25em] text-neutral-500 uppercase">
-            03 &middot; Dispositivos & Automatización
+            03 &middot; Dispositivos a Medida
           </span>
 
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-            HARDWARE & IOT A MEDIDA
+            HARDWARE & IOT
           </h2>
 
-          <p className="text-base text-neutral-300 font-normal leading-relaxed max-w-2xl">
-            Creamos equipos electrónicos personalizados para resolver necesidades específicas de tu empresa: medición remota de variables, automatización de procesos y protección de maquinaria industrial en campo.
+          <p className="text-sm text-neutral-400 font-normal leading-relaxed">
+            Diseño e integración de equipos electrónicos dedicados para la industria.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
-          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
-            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">01 // SUPERVISIÓN</div>
-            <h3 className="text-lg font-medium text-white">Monitoreo Remoto de Activos</h3>
-            <p className="text-xs text-neutral-400 leading-relaxed">
-              Supervisa maquinaria, niveles de tanques, cadenas de frío o equipos en zonas aisladas sin necesidad de enviar personal a inspeccionar.
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8">
+          <div className="border border-white/10 bg-neutral-950 p-5 space-y-2">
+            <Cpu className="h-5 w-5 text-white" />
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Supervisión Remota</h3>
+            <p className="text-xs text-neutral-400">
+              Lectura y transmisión de sensores en maquinaria e instalaciones de campo.
             </p>
           </div>
 
-          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
-            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">02 // PREVENCIÓN</div>
-            <h3 className="text-lg font-medium text-white">Alertas Tempranas de Fallas</h3>
-            <p className="text-xs text-neutral-400 leading-relaxed">
-              Detección anticipada de anomalías de temperatura, presión o vibraciones para evitar daños costosos y paradas imprevistas en la operación.
+          <div className="border border-white/10 bg-neutral-950 p-5 space-y-2">
+            <Activity className="h-5 w-5 text-white" />
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Alertas Tempranas</h3>
+            <p className="text-xs text-neutral-400">
+              Detección anticipada de anomalías operativas para prevenir paradas críticas.
             </p>
           </div>
 
-          <div className="border border-white/10 bg-neutral-950 p-6 space-y-3">
-            <div className="text-xs font-mono text-neutral-500 uppercase tracking-wider">03 // AUTONOMÍA</div>
-            <h3 className="text-lg font-medium text-white">Equipos Resistentes & Autónomos</h3>
-            <p className="text-xs text-neutral-400 leading-relaxed">
-              Dispositivos de larga duración diseñados para soportar intemperie, lluvia, polvo y ambientes industriales severos sin mantenimiento constante.
+          <div className="border border-white/10 bg-neutral-950 p-5 space-y-2">
+            <Layers className="h-5 w-5 text-white" />
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Equipos Autónomos</h3>
+            <p className="text-xs text-neutral-400">
+              Dispositivos resistentes a ambientes severos con consumo optimizado.
             </p>
           </div>
         </div>
@@ -269,7 +302,7 @@ export function Products() {
             href="#contacto"
             className="inline-block border border-white/40 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
           >
-            SOLICITAR SOLUCIÓN A MEDIDA
+            SOLICITAR EQUIPO A MEDIDA
           </a>
         </div>
       </section>
