@@ -15,7 +15,7 @@ export function Hero() {
       <BackgroundSlideshow
         images={HERO_IMAGES}
         intervalMs={6000}
-        overlayClassName="bg-black/80 dark:bg-black/85 backdrop-blur-[1px]"
+        overlayClassName="bg-white/85 dark:bg-black/85 backdrop-blur-[1px]"
       />
 
       {/* Top spacing */}
@@ -23,24 +23,24 @@ export function Hero() {
 
       {/* Center / Main Hero Block */}
       <div className="max-w-4xl space-y-6">
-        <h1 className="text-4xl font-medium tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.05]">
+        <h1 className="text-4xl font-medium tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl leading-[1.05]">
           Hardware y plataformas digitales de alta confiabilidad.
         </h1>
 
-        <p className="max-w-xl text-base text-neutral-300 font-normal leading-relaxed">
+        <p className="max-w-xl text-base text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed">
           Telemetría vehicular satelital, validación de accesos sin colas y automatización industrial a medida.
         </p>
 
         <div className="flex flex-wrap items-center gap-4 pt-4">
           <a
             href={APP_LINKS.sentnldrive}
-            className="border border-white bg-white text-black hover:bg-neutral-200 px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
+            className="border border-neutral-900 bg-neutral-900 text-white hover:bg-neutral-800 dark:border-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
           >
             INGRESAR A SENTINEL DRIVE &rarr;
           </a>
           <a
             href="#contacto"
-            className="border border-white/40 text-white hover:bg-white/10 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
+            className="border border-neutral-300 dark:border-white/40 text-neutral-900 dark:text-white hover:bg-neutral-100 dark:hover:bg-white/10 bg-transparent px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
           >
             CONTACTO
           </a>
@@ -55,7 +55,7 @@ export function Hero() {
               Telemetría [BETA] &rarr;
             </div>
             <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-black dark:group-hover:text-neutral-300 transition">Sentinel Drive</div>
-            <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Seguridad vehicular & geocercas</div>
+            <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Monitoreo GPS & eventos de riesgo</div>
           </a>
 
           <a href={APP_LINKS.access} className="block group transition">

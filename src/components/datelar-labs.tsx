@@ -122,11 +122,11 @@ export function DatelarLabs() {
             04 &middot; Innovación & Software
           </span>
 
-          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-white sm:text-5xl lg:text-6xl">
             DATELAR LABS
           </h2>
 
-          <p className="text-base text-neutral-300 font-normal leading-relaxed">
+          <p className="text-base text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed">
             Laboratorio de innovación tecnológica de Datelar. Desarrollamos plataformas y utilidades digitales orientadas a resolver necesidades operativas.
           </p>
         </div>
@@ -134,7 +134,7 @@ export function DatelarLabs() {
         <div>
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 border border-white/30 bg-transparent px-5 py-2.5 text-xs font-medium tracking-[0.15em] text-white transition hover:border-white hover:bg-white hover:text-black uppercase"
+            className="inline-flex items-center gap-2 border border-neutral-300 dark:border-white/30 bg-transparent px-5 py-2.5 text-xs font-medium tracking-[0.15em] text-neutral-900 dark:text-white transition hover:bg-neutral-900 hover:text-white dark:hover:bg-white dark:hover:text-black uppercase"
           >
             <Code2 className="h-4 w-4" />
             <span>SOLICITAR INFORMACIÓN</span>
@@ -150,29 +150,35 @@ export function DatelarLabs() {
           return (
             <div
               key={item.id}
-              className="border border-white/10 bg-neutral-950 p-6 sm:p-8 flex flex-col justify-between hover:border-white/20 transition group"
+              className="border border-neutral-200 dark:border-white/10 bg-white dark:bg-neutral-950 p-6 sm:p-8 flex flex-col justify-between hover:border-neutral-400 dark:hover:border-white/20 transition shadow-sm group"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between font-mono text-[10px] text-neutral-500 tracking-wider">
                   <span>{item.category}</span>
-                  <span className="text-neutral-400 border border-white/10 px-1.5 py-0.5">{item.tag}</span>
+                  <span className="text-neutral-700 dark:text-neutral-400 border border-neutral-200 dark:border-white/10 px-1.5 py-0.5 bg-neutral-50 dark:bg-transparent">
+                    {item.tag}
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Icon className="h-5 w-5 text-white/70 group-hover:text-white transition" />
-                  <h3 className="text-2xl font-medium text-white tracking-wide">{item.title}</h3>
+                  <Icon className="h-5 w-5 text-neutral-700 dark:text-white/70 group-hover:text-black dark:group-hover:text-white transition" />
+                  <h3 className="text-2xl font-medium text-neutral-900 dark:text-white tracking-wide">
+                    {item.title}
+                  </h3>
                 </div>
 
-                <p className="text-xs text-neutral-400 leading-relaxed font-sans">{item.desc}</p>
+                <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
+                  {item.desc}
+                </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-white/5 flex items-center justify-between font-mono text-[11px] text-neutral-400">
+              <div className="pt-6 mt-6 border-t border-neutral-100 dark:border-white/5 flex items-center justify-between font-mono text-[11px]">
                 <span className="text-neutral-500 text-[10px] uppercase">{item.authorTag}</span>
 
                 {item.id === "access" ? (
                   <a
                     href={APP_LINKS.access}
-                    className="text-white hover:underline transition flex items-center gap-1 font-sans text-xs font-semibold"
+                    className="text-neutral-900 dark:text-white hover:underline transition flex items-center gap-1 font-sans text-xs font-semibold"
                   >
                     <span>Abrir Portal</span>
                     <ArrowUpRight className="h-3 w-3" />
@@ -180,7 +186,7 @@ export function DatelarLabs() {
                 ) : (
                   <button
                     onClick={() => setSelectedProject(item)}
-                    className="text-white hover:underline transition flex items-center gap-1 font-sans text-xs font-semibold"
+                    className="text-neutral-900 dark:text-white hover:underline transition flex items-center gap-1 font-sans text-xs font-semibold"
                   >
                     <span>Abrir Portal</span>
                     <ArrowUpRight className="h-3 w-3" />
@@ -193,13 +199,13 @@ export function DatelarLabs() {
       </div>
 
       {/* Attribution oficial requerida */}
-      <div className="mt-12 border border-white/15 bg-neutral-950 p-6 sm:p-8">
+      <div className="mt-12 border border-neutral-200 dark:border-white/15 bg-neutral-50 dark:bg-neutral-950 p-6 sm:p-8 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono text-xs">
           <div>
-            <div className="text-white font-medium text-sm tracking-wide uppercase">
+            <div className="text-neutral-900 dark:text-white font-medium text-sm tracking-wide uppercase">
               DIVISIÓN DE DATELAR LABS CREADA POR GERARDO GONZA
             </div>
-            <div className="text-neutral-400 text-xs mt-1 font-sans">
+            <div className="text-neutral-600 dark:text-neutral-400 text-xs mt-1 font-sans">
               Espacio dedicado a la creación y desarrollo de plataformas digitales y aplicaciones prácticas dentro de Datelar.
             </div>
           </div>
@@ -211,43 +217,43 @@ export function DatelarLabs() {
 
       {/* Modal Interactivo de Información del Portal */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="w-full max-w-xl border border-white/20 bg-neutral-950 p-6 sm:p-8 space-y-6 shadow-2xl relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 dark:bg-black/80 backdrop-blur-sm">
+          <div className="w-full max-w-xl border border-neutral-200 dark:border-white/20 bg-white dark:bg-neutral-950 p-6 sm:p-8 space-y-6 shadow-2xl relative">
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-6 right-6 text-neutral-400 hover:text-white transition"
+              className="absolute top-6 right-6 text-neutral-400 hover:text-black dark:hover:text-white transition"
               aria-label="Cerrar modal"
             >
               <X className="h-5 w-5" />
             </button>
 
             <div className="space-y-2">
-              <div className="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+              <div className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase">
                 {selectedProject.category} &middot; {selectedProject.tag}
               </div>
-              <h3 className="text-2xl font-medium text-white">{selectedProject.title}</h3>
-              <p className="text-xs font-mono text-neutral-400">{selectedProject.details.subtitle}</p>
+              <h3 className="text-2xl font-medium text-neutral-900 dark:text-white">{selectedProject.title}</h3>
+              <p className="text-xs font-mono text-neutral-500">{selectedProject.details.subtitle}</p>
             </div>
 
-            <p className="text-sm text-neutral-300 leading-relaxed font-sans">
+            <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed font-sans">
               {selectedProject.details.description}
             </p>
 
-            <div className="border border-white/10 bg-black/60 p-4 space-y-2">
-              <div className="text-[11px] font-mono tracking-wider text-white uppercase">
+            <div className="border border-neutral-200 dark:border-white/10 bg-neutral-50 dark:bg-black/60 p-4 space-y-2">
+              <div className="text-[11px] font-mono tracking-wider text-neutral-900 dark:text-white uppercase">
                 CARACTERÍSTICAS DEL SISTEMA
               </div>
-              <ul className="space-y-1.5 text-xs text-neutral-400 font-sans">
+              <ul className="space-y-1.5 text-xs text-neutral-600 dark:text-neutral-400 font-sans">
                 {selectedProject.details.features.map((feat, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-white font-mono">&gt;</span>
+                    <span className="text-neutral-900 dark:text-white font-mono">&gt;</span>
                     <span>{feat}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-white/10">
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-neutral-200 dark:border-white/10">
               <span className="text-[10px] font-mono text-neutral-500 uppercase">
                 {selectedProject.authorTag}
               </span>
@@ -258,7 +264,7 @@ export function DatelarLabs() {
                     href={selectedProject.details.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 border border-white bg-white px-4 py-2 text-xs font-semibold text-black hover:bg-neutral-200 transition uppercase"
+                    className="inline-flex items-center gap-1.5 border border-neutral-900 bg-neutral-900 text-white hover:bg-neutral-800 dark:border-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 px-4 py-2 text-xs font-semibold transition uppercase"
                   >
                     <span>{selectedProject.details.linkText || "Ver Proyecto"}</span>
                     <ExternalLink className="h-3 w-3" />
@@ -266,7 +272,7 @@ export function DatelarLabs() {
                 )}
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="border border-white/20 px-4 py-2 text-xs text-neutral-300 hover:text-white hover:border-white transition uppercase font-mono"
+                  className="border border-neutral-300 dark:border-white/20 px-4 py-2 text-xs text-neutral-700 dark:text-neutral-300 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition uppercase font-mono"
                 >
                   Cerrar
                 </button>

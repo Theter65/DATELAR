@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-full bg-black text-white selection:bg-white selection:text-black">
+    <div className="relative min-h-screen w-full bg-white dark:bg-black text-neutral-900 dark:text-white selection:bg-neutral-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
       {/* Top Starlink-style Minimalist Navbar */}
       <Navbar />
 

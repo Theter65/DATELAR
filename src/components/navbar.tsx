@@ -63,14 +63,14 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="h-screen w-full bg-black px-6 py-8 lg:hidden">
+        <div className="h-screen w-full bg-white dark:bg-black px-6 py-8 lg:hidden transition-colors">
           <div className="flex flex-col gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-sm font-medium tracking-[0.2em] text-neutral-300 hover:text-white"
+                className="text-sm font-medium tracking-[0.2em] text-neutral-800 dark:text-neutral-300 hover:text-black dark:hover:text-white"
               >
                 {link.label}
               </a>
@@ -78,7 +78,7 @@ export function Navbar() {
             <a
               href="#contacto"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-4 inline-block text-center border border-white bg-white py-3 text-xs font-semibold tracking-[0.2em] text-black uppercase"
+              className="mt-4 inline-block text-center border border-neutral-900 bg-neutral-900 dark:border-white dark:bg-white py-3 text-xs font-semibold tracking-[0.2em] text-white dark:text-black uppercase"
             >
               CONTACTO DIRECTO
             </a>

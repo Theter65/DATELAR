@@ -17,8 +17,8 @@ html.dark {
 html.light,
 html:not(.dark) {
   color-scheme: light;
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #ffffff;
+  --foreground: #000000;
 }
 
 * {
@@ -48,7 +48,11 @@ a {
 }
 
 ::selection {
-  background: #3cc6d9;
+  background: #000000;
+  color: #ffffff;
+}
+html.dark ::selection {
+  background: #ffffff;
   color: #000000;
 }
 
@@ -56,56 +60,25 @@ a {
 .starlink-border {
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
+html.light .starlink-border,
 html:not(.dark) .starlink-border {
-  border: 1px solid rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .starlink-border-t {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
+html.light .starlink-border-t,
 html:not(.dark) .starlink-border-t {
-  border-top: 1px solid rgba(15, 23, 42, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .starlink-border-b {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
+html.light .starlink-border-b,
 html:not(.dark) .starlink-border-b {
-  border-bottom: 1px solid rgba(15, 23, 42, 0.12);
-}
-
-/* Light mode overrides for high-contrast clarity */
-html:not(.dark) .text-white {
-  color: #0f172a;
-}
-html:not(.dark) .text-neutral-300 {
-  color: #334155;
-}
-html:not(.dark) .text-neutral-400 {
-  color: #64748b;
-}
-html:not(.dark) .bg-black {
-  background-color: #ffffff;
-}
-html:not(.dark) .bg-black\/80 {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-html:not(.dark) .bg-neutral-950 {
-  background-color: #ffffff;
-}
-html:not(.dark) .border-white\/10,
-html:not(.dark) .border-white\/15,
-html:not(.dark) .border-white\/20,
-html:not(.dark) .border-white\/30,
-html:not(.dark) .border-white\/40 {
-  border-color: rgba(15, 23, 42, 0.15);
-}
-html:not(.dark) input,
-html:not(.dark) textarea,
-html:not(.dark) select {
-  background-color: #ffffff !important;
-  color: #0f172a !important;
-  border-color: rgba(15, 23, 42, 0.2) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 /* Subtle tech grid */
@@ -116,10 +89,11 @@ html:not(.dark) select {
   background-size: 80px 80px;
 }
 
+html.light .subtle-grid,
 html:not(.dark) .subtle-grid {
   background-image: 
-    linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
 }
 
 /* Minimalist scrollbar */
