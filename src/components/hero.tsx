@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import { APP_LINKS } from "@/config/links";
 
 export function Hero() {
   return (
@@ -43,7 +44,7 @@ export function Hero() {
             <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Seguridad vehicular & geocercas</div>
           </div>
 
-          <a href="/access" className="block group transition">
+          <a href={APP_LINKS.access} className="block group transition">
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-black dark:group-hover:text-neutral-300 transition">
               Control de Accesos &rarr;
             </div>

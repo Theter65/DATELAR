@@ -29,6 +29,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { APP_LINKS } from "@/config/links";
 
 export default function DatelarAccessPortal() {
   // Estado de sesión
@@ -303,7 +304,7 @@ export default function DatelarAccessPortal() {
             <ThemeToggle />
 
             <Link
-              href="/"
+              href={APP_LINKS.home}
               className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition flex items-center gap-1.5 bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 rounded-lg"
             >
               <ArrowLeft className="h-3.5 w-3.5" />

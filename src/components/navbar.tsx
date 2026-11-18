@@ -4,13 +4,14 @@ import { useState } from "react";
 import { BrandLogo } from "./brand-logo";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import { APP_LINKS } from "@/config/links";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { label: "SENTNLDRIVE", href: "/#sentnldrive" },
-    { label: "DATELAR ACCESS", href: "/access" },
+    { label: "DATELAR ACCESS", href: APP_LINKS.access },
     { label: "HARDWARE & IOT", href: "/#hardware-iot" },
     { label: "DATELAR LABS", href: "/#datelar-labs" },
     { label: "MISIÓN", href: "/#mision" },
