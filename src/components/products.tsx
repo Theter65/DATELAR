@@ -57,10 +57,10 @@ export function Products() {
             </div>
 
             <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-white sm:text-5xl lg:text-6xl">
-              SENTINEL DRIVE
+              SENTNLDRIVE
             </h2>
 
-            {/* Capacidades reales de Sentinel Drive (sin texto excesivo) */}
+            {/* Capacidades reales de SENTNLDRIVE (sin texto excesivo) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 max-w-xl">
               <div className="border border-neutral-200 dark:border-white/15 p-4 bg-white/95 dark:bg-neutral-950/90 shadow-sm flex items-center gap-3.5">
                 <MapPin className="h-5 w-5 text-neutral-900 dark:text-white shrink-0" />
@@ -96,7 +96,7 @@ export function Products() {
                 href={APP_LINKS.sentnldrive}
                 className="inline-block border border-neutral-900 bg-neutral-900 text-white hover:bg-neutral-800 dark:border-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
               >
-                INGRESAR A SENTINEL DRIVE &rarr;
+                INGRESAR A SENTNLDRIVE &rarr;
               </a>
               <a
                 href="#contacto"

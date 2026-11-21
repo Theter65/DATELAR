@@ -105,7 +105,7 @@ export function DatelarLabs() {
           "Verificación automática de lectura de sensores",
           "Clientes de prueba para brokers MQTT y WebSockets",
           "Simulación de condiciones de fallo y watchdog",
-          "Base de pruebas para dispositivos Sentinel Drive",
+          "Base de pruebas para dispositivos SENTNLDRIVE",
         ],
       },
     },

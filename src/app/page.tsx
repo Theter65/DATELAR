@@ -18,7 +18,7 @@ export default function Home() {
         {/* 1. Full-Screen Immersive Hero */}
         <Hero />
 
-        {/* 2. Core Chapter Products (Sentinel Drive, Accesos QR, Hardware IoT) */}
+        {/* 2. Core Chapter Products (SENTNLDRIVE, Accesos QR, Hardware IoT) */}
         <Products />
 
         {/* 3. Datelar Labs (Music Muv, Telecom Suite, Open Source por Gerardo Gonza) */}

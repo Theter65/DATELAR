@@ -8,7 +8,7 @@ export function ContactSection() {
     name: "",
     email: "",
     phone: "",
-    service: "SENTINEL DRIVE",
+    service: "SENTNLDRIVE",
     message: "",
   });
 
@@ -31,7 +31,7 @@ export function ContactSection() {
           </h2>
 
           <p className="text-sm text-neutral-600 dark:text-neutral-400 font-light leading-relaxed max-w-md">
-            Consulta sobre el despliegue de <strong>Sentinel Drive</strong> (telemetría vehicular), 
+            Consulta sobre el despliegue de <strong>SENTNLDRIVE</strong> (telemetría vehicular), 
             la implementación de <strong>Datelar Access</strong> para tu evento o el desarrollo de 
             hardware y soluciones a medida.
           </p>
@@ -117,7 +117,7 @@ export function ContactSection() {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full border border-neutral-300 dark:border-white/20 bg-white dark:bg-black px-4 py-3 text-sm text-neutral-900 dark:text-white focus:border-black dark:focus:border-white focus:outline-none"
                   >
-                    <option value="SENTINEL DRIVE" className="bg-white dark:bg-black text-neutral-900 dark:text-white">SENTINEL DRIVE (TELEMETRÍA VEHICULAR)</option>
+                    <option value="SENTNLDRIVE" className="bg-white dark:bg-black text-neutral-900 dark:text-white">SENTNLDRIVE (TELEMETRÍA VEHICULAR)</option>
                     <option value="DATELAR ACCESS" className="bg-white dark:bg-black text-neutral-900 dark:text-white">DATELAR ACCESS (CONTROL DE ACCESO)</option>
                     <option value="HARDWARE & IOT" className="bg-white dark:bg-black text-neutral-900 dark:text-white">HARDWARE & IOT A MEDIDA</option>
                     <option value="DATELAR LABS" className="bg-white dark:bg-black text-neutral-900 dark:text-white">DATELAR LABS (INNOVACIÓN & SOFTWARE)</option>

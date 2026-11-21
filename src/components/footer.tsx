@@ -8,7 +8,7 @@ export function Footer() {
         <BrandLogo size={22} />
 
         <div className="flex flex-wrap gap-6 text-[11px] font-mono tracking-wider text-neutral-600 dark:text-neutral-400">
-          <a href={APP_LINKS.sentnldrive} className="hover:text-black dark:hover:text-white transition">SENTINEL DRIVE</a>
+          <a href={APP_LINKS.sentnldrive} className="hover:text-black dark:hover:text-white transition">SENTNLDRIVE</a>
           <a href={APP_LINKS.access} className="hover:text-black dark:hover:text-white transition">DATELAR ACCESS</a>
           <a href="/#hardware-iot" className="hover:text-black dark:hover:text-white transition">HARDWARE & IOT</a>
           <a href="/#datelar-labs" className="hover:text-black dark:hover:text-white transition">DATELAR LABS</a>

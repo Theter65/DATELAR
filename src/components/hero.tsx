@@ -36,7 +36,7 @@ export function Hero() {
             href={APP_LINKS.sentnldrive}
             className="border border-neutral-900 bg-neutral-900 text-white hover:bg-neutral-800 dark:border-white dark:bg-white dark:text-black dark:hover:bg-neutral-200 px-7 py-3 text-xs font-semibold tracking-[0.18em] transition uppercase"
           >
-            INGRESAR A SENTINEL DRIVE &rarr;
+            INGRESAR A SENTNLDRIVE &rarr;
           </a>
           <a
             href="#contacto"
@@ -54,7 +54,7 @@ export function Hero() {
             <div className="text-xs font-medium tracking-[0.15em] text-neutral-500 uppercase group-hover:text-black dark:group-hover:text-neutral-300 transition">
               Telemetría [BETA] &rarr;
             </div>
-            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-black dark:group-hover:text-neutral-300 transition">Sentinel Drive</div>
+            <div className="text-xl font-medium text-neutral-900 dark:text-white mt-1 group-hover:text-black dark:group-hover:text-neutral-300 transition">SENTNLDRIVE</div>
             <div className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Monitoreo GPS & eventos de riesgo</div>
           </a>
 
