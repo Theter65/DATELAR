@@ -21,7 +21,7 @@ export default function Home() {
         {/* 2. Core Chapter Products (SENTNLDRIVE, Accesos QR, Hardware IoT) */}
         <Products />
 
-        {/* 3. Datelar Labs (Music Muv, Telecom Suite, Open Source por Gerardo Gonza) */}
+        {/* 3. Datelar Labs */}
         <DatelarLabs />
 
         {/* 4. Misión & Visión */}

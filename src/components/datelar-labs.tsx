@@ -53,7 +53,7 @@ export function DatelarLabs() {
       category: "DATELAR LABS // AUDIO",
       desc: "Reproductor de música nativo de alto rendimiento, sin publicidad y mínimo consumo de batería.",
       tag: "APLICACIÓN MÓVIL",
-      authorTag: "POR GERARDO GONZA",
+      authorTag: "DATELAR LABS",
       icon: Music,
       details: {
         subtitle: "Reproductor de Audio Ligero y de Alta Fidelidad",
@@ -75,7 +75,7 @@ export function DatelarLabs() {
       category: "DATELAR LABS // TELECOMUNICACIONES",
       desc: "Calculadoras y utilidades prácticas para diseño y validación de radioenlaces y fibra óptica.",
       tag: "INGENIERÍA",
-      authorTag: "POR GERARDO GONZA",
+      authorTag: "DATELAR LABS",
       icon: Radio,
       details: {
         subtitle: "Herramientas de Cálculo y Planificación de Redes",
@@ -95,7 +95,7 @@ export function DatelarLabs() {
       category: "DATELAR LABS // DISPOSITIVOS & SENSORES",
       desc: "Scripts de diagnóstico y verificación de sensores para hardware antes de despliegue en campo.",
       tag: "HERRAMIENTAS",
-      authorTag: "POR GERARDO GONZA",
+      authorTag: "DATELAR LABS",
       icon: Terminal,
       details: {
         subtitle: "Automatización & Testing para Hardware Embebido",

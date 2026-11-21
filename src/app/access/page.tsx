@@ -134,7 +134,7 @@ export default function DatelarAccessPortal() {
         setCurrentUser({
           id: "superadmin-datelar",
           role: "superadmin",
-          name: "Gerardo Gonza",
+          name: "Administrador Datelar",
           email: "admin@datelar.com",
         });
         setIsStaffMode(false);
